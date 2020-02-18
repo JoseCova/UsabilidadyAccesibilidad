@@ -4,8 +4,8 @@
 
 * **Qué peticiones desencadena la consulta.** 
  
-Desencadena peticiones de tipo GET con códigos 200 , 302 , 304. 
- Teniendo en cuenta que las que son de la forma 2XX representan un código de retorno correcto y las de la forma 3XX representan un código de rotorno de redirección.
+ Desencadena peticiones de tipo GET con códigos 200 , 304 , 404. 
+ Teniendo en cuenta que las que son de la forma 2XX representan un código de retorno correcto, las de la forma 3XX representan un código de rotorno de redirección y las de la forma 4XX representan un código de error del cliente.
 
 * **¿Qué tipo de petición estás realizando?**
 
@@ -46,7 +46,8 @@ En esta página web no hay elementos Javascript.
 
 * **Qué peticiones desencadena la consulta.** 
 
-
+Desencadena peticiones de tipo GET todas ellas con códigos 200 , 302 , 304. 
+ Teniendo en cuenta que las que son de la forma 2XX representan un código de retorno correcto y las de la forma 3XX representan un código de rotorno de redirección.
 
 * **¿Qué tipo de petición estás realizando?**  
 
@@ -65,12 +66,22 @@ http://www3.gobiernodecanarias.org/sanidad/scs/gc/18/Cita_Previa/index.html
 Tiene ip 93.188.136.126:80
 
 * **¿La página tiene alguna cookie?, ¿Cuáles?.**   
-Sí la página tiene cookies.
+
+Sí la página tiene cookies.  
 ![cookies](imagenes/cookies.png)  
+
 * **¿Qué idioma acepta?**    
+
 ![idioma2](imagenes/idioma2.png)
-* **Alguna línea de código JavaScript**  
+
+* **Alguna línea de código JavaScript** 
+
+![js](imagenes/js.png)
+
 * **Alguna línea de código CSS que se aplique**  
+
 ![css2](imagenes/css2.png)
+
 * **Alguna línea de código HTML que se aplique.**   
+
 ![html2](imagenes/html2.png)
