@@ -13,7 +13,7 @@ Desencadena peticiones de tipo GET con códigos 200 , 302 , 304.
 
 * **Qué código de estatus devuelve.** 
 
-Devuelve los códigos: 302,304, 502 y 404.  
+Devuelve los códigos: 200 , 302 , 304 y 404.  
 
 * **Qué DNS tiene el servidor**
 
@@ -23,7 +23,9 @@ http://www.gobiernodecanarias.org/istac/api/
 
 El servidor tiene IP 93.188.137.123:80
 
-* **¿La página tiene alguna cookie?¿Cuáles?**   
+* **¿La página tiene alguna cookie? ¿Cuáles?**   
+
+
 
 * **¿Qué idioma acepta?** 
 
