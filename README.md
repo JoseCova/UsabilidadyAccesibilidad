@@ -6,4 +6,4 @@
 * **Néstor Torres Díaz**
 * **José Javier Caraballo Cova**
 
-![Seminario DCU](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/seminario-dcu)
+**Diseño Centrado en el Usuario:** ![Seminario DCU](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/seminario-dcu)
