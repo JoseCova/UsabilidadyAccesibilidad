@@ -1,4 +1,4 @@
-# Usabilidad y Accesibilidad
+# Usabilidad y Accesibilidad (Grupo Martes 9:30 - 11:30)
 
 ***Repositorio para la asignatura de Usabilidad y Accesibilidad Curso 2019/2020***
 ### Miembros del grupo 
