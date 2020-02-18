@@ -25,10 +25,10 @@ El servidor tiene IP 93.188.137.123:80
 
 * **¿La página tiene alguna cookie? ¿Cuáles?**   
 
+No tiene cookies.
 
-
-* **¿Qué idioma acepta?** 
-
+* **¿Qué idioma acepta?**   
+![idioma](imagenes/idioma.png)
 
 * **Alguna línea de código JavaScript**  
 * **Alguna línea de código CSS que se aplique**
