@@ -1,4 +1,4 @@
-# Informe seminario HTTP
+# Introducción al protocolo HTTP  
 
 *Consulta en [Web del Instituto Canario de Estadística (Istac) ](http://www.gobiernodecanarias.org/istac/api/)*
 
