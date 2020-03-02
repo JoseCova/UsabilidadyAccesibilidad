@@ -10,6 +10,9 @@
 
 **Diseño Centrado en el Usuario:** ![Seminario DCU](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/seminario-dcu)
 
+**Uso de la web por personas con disfuncionalidad** ![Seminario Disfuncionalidad](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/seminario-disfuncionalidad)
+
 #### Prácticas
 
 **Introducción al protocolo HTTP:** ![protocoloHTTP](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica_http)
+
