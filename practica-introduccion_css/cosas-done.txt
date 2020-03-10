@@ -1,0 +1,4 @@
+De la imagen tarea 2 que contienen los requisitos del css
+Al final de la práctica añadir este fichero al gitignore o borrarlo directamente
+
+Hose - hecho el apartado de "La fuente debe ser arial, el color negro con tamaño 1.5em"
