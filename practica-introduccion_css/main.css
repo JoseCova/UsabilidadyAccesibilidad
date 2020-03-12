@@ -1,0 +1,82 @@
+body{
+    width: 770px;
+}
+
+
+#footer{
+    width: 770px;
+}
+
+#right-side{
+    width: 430px;
+}
+
+#flex-container {
+    display: flex;
+  }
+
+#right-header{
+    height: 100px;
+    background-color: grey;
+
+}
+
+f.class1{
+    font-family: Arial;
+    color: black;
+    font-size: 1.5em;
+}
+
+#center-side table{
+    color:green;
+}
+
+#left-side {
+    padding: 0.3em;
+    margin-bottom: 0.7em;
+}
+
+#left-side a{
+    color:blue;
+}
+
+#left-side a:hover
+{
+    color: red;
+}
+
+#left-side a:visited
+{
+    font-family: Arial;
+    color: blue;
+}
+
+#right-side a{
+    color:blue;
+}
+
+#right-side a:hover
+{
+    color: red;
+}
+
+#right-side a:visited
+{
+    font-family: Arial;
+    color: blue;
+}
+
+#center-side a{
+    color:blue;
+}
+
+#center-side a:hover
+{
+    color: red;
+}
+
+#center-side a:visited
+{
+    font-family: Arial;
+    color: blue;
+}
