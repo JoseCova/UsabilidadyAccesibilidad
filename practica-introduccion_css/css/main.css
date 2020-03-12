@@ -1,82 +1,47 @@
-body{
-    width: 770px;
+/* CSS del cuerpo **/
+
+body {
+  font-family: Arial;
+  color: black;
+  font-size: 1.5em;
+  width: 770px;
 }
 
-
-#footer{
-    width: 770px;
+/*CSS del navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(179, 168, 168);
 }
 
-#right-side{
-    width: 430px;
+li {
+  float: left;
 }
 
-#flex-container {
-    display: flex;
-  }
-
-#right-header{
-    height: 100px;
-    background-color: grey;
-
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-f.class1{
-    font-family: Arial;
-    color: black;
-    font-size: 1.5em;
+/* modificar esto para 
+li a:hover {
+  background-color: #111;
 }
 
-#center-side table{
-    color:green;
+/* Fin css del navbar */
+
+img {
+    height: ;
+    width: ;
 }
 
-#left-side {
-    padding: 0.3em;
-    margin-bottom: 0.7em;
-}
-
-#left-side a{
-    color:blue;
-}
-
-#left-side a:hover
-{
-    color: red;
-}
-
-#left-side a:visited
-{
-    font-family: Arial;
-    color: blue;
-}
-
-#right-side a{
-    color:blue;
-}
-
-#right-side a:hover
-{
-    color: red;
-}
-
-#right-side a:visited
-{
-    font-family: Arial;
-    color: blue;
-}
-
-#center-side a{
-    color:blue;
-}
-
-#center-side a:hover
-{
-    color: red;
-}
-
-#center-side a:visited
-{
-    font-family: Arial;
-    color: blue;
+/* CSS de las imágenes en la zona de enlaces a sitios relevantes */
+.imagenes-links {
+    width: 400px;
+    height: 400px;
 }
