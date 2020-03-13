@@ -2,10 +2,11 @@
 
 body {
   font-family: Arial;
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: 1.5em;
-  width: 770px;
 }
+
+/* Fin CSS del cuerpo */
 
 /*CSS del navbar*/
 ul {
@@ -28,20 +29,35 @@ li a {
   text-decoration: none;
 }
 
-/* modificar esto para 
 li a:hover {
-  background-color: #111;
+  background-color: #a5a5a5;
+  color: white;
 }
 
 /* Fin css del navbar */
 
-img {
-    height: ;
-    width: ;
+/* CSS de los links */
+a {
+  color: #809fff;
 }
 
-/* CSS de las imágenes en la zona de enlaces a sitios relevantes */
-.imagenes-links {
-    width: 400px;
-    height: 400px;
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: #1a53ff;
+}
+/* Fin CSS de los links */
+
+/* CSS de los párrafos */
+p {
+  margin-top: 0.5em;
+}
+/* Fin CSS de los párrafos */
+
+/* CSS de los elementos del menú */
+.vertical-menu li {
+  padding: 0.3em;
+  margin-bottom: 0.7em;
 }
