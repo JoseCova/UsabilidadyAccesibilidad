@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
@@ -7,140 +8,75 @@
     <meta name="author" content="Néstor Torres Díaz">
     <meta name="author" content="Edgar Figueroa González">
     <meta name="author" content="José  Javier Caraballo Cova">
-    <meta name="description" content="Página con los contenidos requeridos en la práctica Introducción a CSS de la asignatura Usabilidad y Accesibilidad">
+    <meta name="description"
+        content="Página con los contenidos requeridos en la práctica Introducción a CSS de la asignatura Usabilidad y Accesibilidad">
     <link rel="icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
 <body>
-    <!--Navbar -->
-    <img id="cabecera_jpg" src="images/cabecera.jpg">
-    <div id="cabecera">
-        <ul>
-            <li class="nav-item"><a href="#verduras">Verduras</a></li>
-            <li class="nav-item"><a href="#frutas">Frutas</a></li>
-            <li class="nav-item"><a href="#frutos secos">Frutos secos</a></li>
-            <li class="nav-item"><a href="#sobre nosotros">Sobre nosotros</a></li>
+    <!-- Cabecera- y navbar -->
+    <div id="img-cabecera"><img src="./images/cabecera.jpg" /></div>
+    <nav class="nav">
+        <ul id="navigation">
+            <li><a href="#">Frutas</a></li>
+            <li><a href="#">Verduras</a></li>
+            <li><a href="#">Frutos Secos</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
-    </div>
-    <!--Final Navbar -->
+    </nav>
+    <!-- Fin cabecera y navbar-->
 
-
-    <!--Texto Secundario-->
-    <div id="parte-izquierda">
-        <div id="zona-secundario">
-            <h3>Ofertas de la semana</h3>
-            <p>En el siguiente apartado, encontrarás nuestras <a href="https://comefruta.es/ofertas-regalos-fruteria-confianza">ofertas</a> que pondremos cada semana. Cada semana, los días lunes y miércoles tendremos ofertas nuevas, ya sea de frutas, verduras
-                o frutos secos y a un precio increíble. Debes estar siempre atento, tu frutería más económica se llama "Frutería el ñoqui".
-            </p>
-
-            <div class="vertical-menu">
-                <b>Lunes:</b><br>
-                <ol>
-                    <li>Pimientos de padrón - 0,20€ (1,50€/Kg)</li><br>
-                    <li>Manzanas Golden - 0,29€ (1,17€/Kg)</li><br>
-                    <li>Anacardos - 0,45€ (1,20€/Kg)</li><br>
-                    <li>Mandarinas - 0,25€ (1,90€/Kg)</li><br>
-                </ol>
-                <b>Miércoles:</b><br>
-                <ol>
-                    <li>Plátano de canarias - 0,32€ (1,29€/Kg)</li><br>
-                    <li>Aguacate - 0,67€ (3,02€/Kg)</li><br>
-                    <li>Tomates ensalada - 0,35€ (1,05€/Kg)</li> <br>
-                    <li>Zanahorias del huerto - 0,60€Kg</li><br>
-                </ol>
-            </div>
-        </div>
-        <!-- Fin contenido secundario -->
-    </div>
-
-    <div id="parte-derecha">
-
-        <div id="parte-derecha-left">
-            <!--Contenido principal-->
-            <div id="zona-principal">
-                <!--Primera sección jerárquica-->
-                <img src="images/logo.png" alt="Logo Fruteria">
-                <h3>¿ Quiénes somos ?</h3>
-                <p> ¡Bienvenido! Somos la mejor frutería de españa :)
-                    <br>
-                    <a href="https://www.google.com/search?q=fruteria+el+%C3%B1oqui&oq=fruteria+el+%C3%B1oqui&aqs=chrome..69i57.4109j0j1&sourceid=chrome&ie=UTF-8">Google
-            - Fruteria el ñoqui</a>
-                    </br>
-                </p>
-                <!--Segunda sección jerárquica-->
-                <h4>Productos estrella</h4>
-                <!---  <p>Los productos que más suelen gustar a nuestros clientes suelen ser nuestras manzanas y zanahorias las cuales cultivamos con muchísimo cariño , además también de nuestros anacardos , que tienen un sabor inigualable. Algunos otros productos
-                    que suelen gustar bastante a los clientes son nuestras cebollas , calabazas y mandarinas. En orden de ventas , nuestros mejores tres productos son:
-                </p>-->
-                <ol>
-                    <li><b>Manzanas golden</b></li> <br>
-                    <li><b>Papas King Edward</b></li> <br>
-                    <li><b>Zanahorias del huerto</b></li> <br>
-                </ol>
-                <br>
-                <p>
-                    Si tienes más curiosidad sobre qué productos llaman más la atención de la gente alrededor del mundo , entonces deberías echarle un vistazo a este
-                    <a href="https://www.infobae.com/tendencias/nutriglam/2017/07/27/las-10-frutas-mas-exoticas-y-ricas-del-mundo/">artículo.</a>
-                </p>
-                <!--Tercera sección jerárquica-->
-                <h5>Precio de nuestros productos</h5>
-                <!--Tabla con precios , perdón por las tabulaciones en html-->
-                <p>
-                    Nuestros productos son asequibles económicamente para todo el mundo , pero quizás difieran del resto del mercado por el simple hecho de que todo lo que vendemos es sembrado y cultivado por nosotros , lo cual añade un "plus" a nuestros productos.
-                </p>
-                <table>
-                    <summary><strong>&nbsp&nbsp&nbsp<em>Tabla de precios de Frutería el ñoqui</em></strong></summary>
-
-                    <tr>
-                        <td colspan="2">&nbsp&nbsp&nbsp<b>Producto</b></td>
-                        <td colspan="3">&nbsp&nbsp&nbsp<b>Precio</b></td>
-                        <td colspan="2">&nbsp&nbsp&nbsp<b>Categoría</b></td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2">&nbsp&nbsp&nbsp Papas King Edward</td>
-                        <td colspan="3">&nbsp&nbsp&nbsp 1,50/Kg</td>
-                        <td colspan="4">&nbsp&nbsp&nbsp Verduras: Tubérculo</td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2">&nbsp&nbsp&nbsp Tomate Ensalada</td>
-                        <td colspan="3">&nbsp&nbsp&nbsp 1,20/Kg</td>
-                        <td colspan="4">&nbsp&nbsp&nbsp Verduras: Fruto</td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2">&nbsp&nbsp&nbsp Manzanas Golden</td>
-                        <td colspan="3">&nbsp&nbsp&nbsp 1,50/Kg</td>
-                        <td colspan="4">&nbsp&nbsp&nbsp Frutas</td>
-                    </tr>
-                </table>
-                <p>
-                    Si quiere estar al día de los precios del mercado, puede consultarlos tranquilamente en la página web de <a href="https://mercatenerife.com/precios_frame.php?l=1">mercatenerife.</a>
-                </p>
-            </div>
+    <div id="container">
+        <!--Zona secundaria - Menú-->
+        <div id="left-side">
+            <h3><a href="https://comefruta.es/ofertas-regalos-fruteria-confianza">Ofertas de la semana</a></h3>
+            <ol>
+                <li>Pimientos de padrón - 0,20€ (1,50€/Kg)</li>
+                <li>Manzanas Golden - 0,29€ (1,17€/Kg)</li>
+                <li>Plátano de canarias - 0,32€ (1,29€/Kg)</li>
+                <li>Aguacate - 0,67€ (3,02€/Kg)</li>
+            </ol>
         </div>
 
-        <!--Fin Contenido principal-->
-
-
-        <div id="parte-derecha-right">
-            <!-- Zona con enlaces a sitios relevantes -->
-            <div id="zona-links-interes">
-                <p> Nuestro repositorio de github: <a href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-introduccion_css"> Grupo 10
-            -
-            Usabilidad y Accesibilidad</a>
-                </p>
-                <p> Enlace al campus virtual de la asignatura: <a href="https://campusvirtual.ull.es/1920/course/view.php?id=201911080"> UYA </a>
-            </div>
+         <!-- Parte central - tabla-->
+        <div id="center-side">
+            <table summary="Productos estrella">
+                <tr>
+                    <td><a href="#">Papas King Edward</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Tomates Cherry</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Fresas</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Productos rebajados</a></td>
+                </tr>
+            </table>
         </div>
+        <!-- Parte central - tabla-->
+
+        <!-- Links de interés-->
+        <div id="right-side">
+            
+            <table>
+                <tr>
+                    <td>Somos la mejor frutería de españa, <a href="#">búscanos.<br></br></a></td>
+                </tr>
+                <tr>
+                    <td>¿Cómo localizarnos? <a href="#">Ubicación</a></td>
+                </tr>
+            </table>
+        </div>
+        <!-- Fin links de interes -->
     </div>
-    <div id="pie-pagina">
-        <footer>
-            Página web desarrollada por: Néstor Torres Díaz, José Javier Caraballo Cova y Edgar Figueroa González
-        </footer>
-    </div>
+
+    <!--Pie de página-->
+    <footer id="pie-pagina">
+        <p>Autores : José Javier Caraballo Cova , Edgar Figueroa González y Néstor Torres Díaz.</p>
+    </footer>
 </body>
 
 </html>
