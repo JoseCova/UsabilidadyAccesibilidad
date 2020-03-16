@@ -32,7 +32,6 @@ li a {
 
 li a:hover {
   background-color: #a5a5a5;
-  color: white;
 }
 
 /* Fin css del navbar */
@@ -57,4 +56,24 @@ p {
 }
 /* Fin CSS de los párrafos */
 
+/** CSS posicionamiento zonas de contenido */
+header {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#zona-secundario {
+  position: absolute;
+  top:0px;
+  left:0px;
+  right: 592px;
+  background-color: violet;
+}
 
+#zona-principal {
+  background-color: tomato;
+}
+
+#zona-links-interes {
+  background-color: aquamarine;
+}
