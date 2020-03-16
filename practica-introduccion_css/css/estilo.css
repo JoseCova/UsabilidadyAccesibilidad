@@ -44,6 +44,10 @@ p {
 }
 /* Fin css imagen de la cabecera */
 
+p {
+    margin-top: 0.5em;
+}
+
 /* CSS para los links */
 
 a {
@@ -108,21 +112,6 @@ color: red;
 #left-side li {
   margin-bottom: 0.7em;
   padding: 0.3em;
-}
-
-#left-side a {
-  text-decoration: none;
-}
-
-
-#right-side table {
-  font-family: Arial;
-  font-size: 1.5em;
-  color: black;
-}
-
-#right-side tr {
-  padding-bottom: 1.5em;
 }
 
 #pie-pagina {
