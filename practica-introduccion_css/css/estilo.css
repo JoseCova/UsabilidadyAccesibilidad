@@ -1,5 +1,6 @@
 body {
   width: 770px;
+  font-family: Arial;
 }
 
 p {
@@ -18,7 +19,6 @@ p {
 }
 
 .nav li a {
-  font-family: arial;
   font-size: 1.5em;
   display: block;
   color: black;
@@ -45,7 +45,7 @@ p {
 /* Fin css imagen de la cabecera */
 
 p {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 /* CSS para los links */
@@ -64,15 +64,30 @@ a:visited:hover {
   color: red;
 }
 
+/** CSS partes de la página */
 #container {
   display: flex;
   font-family: Arial;
   color: black;
 }
 
+#left-side,
+#center-side,
+#right-side {
+  border: 2px solid black;
+  height: 500px;
+  margin: auto;
+  margin-top: 15px;
+}
+
 #left-side {
   width: 200px;
 }
+
+#left-side li {
+    margin-bottom: 0.7em;
+    padding: 0.3em;
+  }
 
 #center-side {
   width: 330px;
@@ -83,41 +98,24 @@ a:visited:hover {
 
 #center-side a {
   color: green;
-  text-decoration: none;
 }
 
 #center-side a:hover {
-color: red;
+  color: red;
 }
 
 #right-side {
   width: 200px;
 }
 
-#left-side,
-#center-side,
-#right-side {
-  border: 2px solid black;
-  height: 300px;
-  margin: auto;
-  margin-top: 25px;
-}
+/** Fin CSS partes de la página */
 
-#left-side ul {
-  font-family: Arial;
-  font-size: 1.5em;
-  color: black;
-}
 
-#left-side li {
-  margin-bottom: 0.7em;
-  padding: 0.3em;
-}
-
+/** CSS footer */
 #pie-pagina {
   border: 2px solid black;
-  margin-top: 25px;
+  margin-top: 15px;
   text-align: center;
   font-style: italic;
 }
-
+/* Fin CSS footer */
