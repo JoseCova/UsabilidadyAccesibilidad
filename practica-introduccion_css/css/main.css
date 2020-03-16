@@ -1,79 +1,128 @@
 /* CSS del cuerpo **/
 
 body {
-  font-family: Arial;
-  color: black;
-  font-size: 1.5em;
-  width: 770px;
+    font-family: Arial;
+    color: black;
+    font-size: 1.5em;
+    width: 770px;
 }
+
 
 /* Fin CSS del cuerpo */
 
+
 /*CSS del navbar*/
+
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(179, 168, 168);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(179, 168, 168);
 }
 
 li {
-  float: left;
+    float: left;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 li a:hover {
-  background-color: #a5a5a5;
+    background-color: #a5a5a5;
 }
+
 
 /* Fin css del navbar */
 
+
 /* CSS de los links */
+
 a {
-  color: #809fff;
+    color: #809fff;
 }
 
 a:hover {
-  color: red;
+    color: red;
 }
 
 a:visited {
-  color: #1a53ff;
+    color: #1a53ff;
 }
+
+
 /* Fin CSS de los links */
 
+
 /* CSS de los párrafos */
+
 p {
-  margin-top: 0.5em;
+    margin-top: 0.5em;
 }
+
+
 /* Fin CSS de los párrafos */
 
+
 /** CSS posicionamiento zonas de contenido */
-header {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+
+#parte-izquierda {
+    float: left;
+    position: relative;
+    /*text-align: center;*/
+    width: 50%;
+    background-color: crimson;
 }
+
+#parte-derecha {
+    float: right;
+    left: 40px;
+    top: 80px;
+    right: 0px;
+    text-align: center;
+    position: relative;
+    width: 50%;
+    background-color: saddlebrown;
+}
+
+#cabecera {
+    position: absolute;
+    right: 0px;
+    width: 920px;
+}
+
+
+/*
 #zona-secundario {
-  position: absolute;
-  top:0px;
-  left:0px;
-  right: 592px;
-  background-color: violet;
+    position: absolute;
+    width: 40%;
+
+    top: 0px;
+    left: 50px;
+    right: 700px;
+    background-color: violet;
 }
 
 #zona-principal {
-  background-color: tomato;
+    background-color: tomato;
+    text-align: center;
+    width: 30%;
+    position: absolute;
+    top: 70px;
+    right: 0px;
 }
 
+
+
 #zona-links-interes {
-  background-color: aquamarine;
+    background-color: aquamarine;
+    position: absolute;
+    top: 70px;
+    width: 30%;
 }
+*/
