@@ -108,6 +108,11 @@ a:visited:hover {
   width: 200px;
 }
 
+#right-side  td {
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+    padding: 0.3em;
+}
 /** Fin CSS partes de la página */
 
 
