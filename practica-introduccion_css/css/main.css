@@ -79,15 +79,25 @@ p {
     background-color: crimson;
 }
 
-#parte-derecha {
-    float: right;
+#parte-derecha-left {
+    float: left;
     left: 40px;
     top: 80px;
-    right: 0px;
+    /*right: 0px;*/
     text-align: center;
     position: relative;
     width: 50%;
     background-color: saddlebrown;
+}
+
+#parte-derecha-right {
+    float: right;
+    top: 90px;
+    right: 25px;
+    text-align: center;
+    position: absolute;
+    width: 25%;
+    background-color: green;
 }
 
 #cabecera {
