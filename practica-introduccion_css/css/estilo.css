@@ -1,152 +1,136 @@
 body {
-    width: 770px;
+  width: 770px;
 }
 
 p {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 /** CSS del navbar */
 #navigation {
-    margin: auto;
+  margin: auto;
 }
 
 .nav ul {
-    display: flex;
-    list-style-type: none;
-    background-color: lightgray;
+  display: flex;
+  list-style-type: none;
+  background-color: lightgray;
 }
 
 .nav li a {
-    font-family: arial;
-    font-size: 1.5em;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
+  font-family: arial;
+  font-size: 1.5em;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
 }
 
 .nav li a:hover {
-    background-color: grey;
+  background-color: grey;
 }
 
 /** Fin CSS del navbar */
 
 /** CSS de la imagen de la cabecera */
 #img-cabecera {
-    height: 100px;
-
+  height: 100px;
 }
 
 #img-cabecera > img {
-    width: 770px;
-    height:100px;
+  width: 770px;
+  height: 100px;
 }
 /* Fin css imagen de la cabecera */
 
+/* CSS para los links */
+
+a {
+  color: lightskyblue;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+a:visited {
+  color: blue;
+}
+a:visited:hover {
+  color: red;
+}
+
 #container {
-    display: flex;
-    font-family: Arial;
-    color: black;
+  display: flex;
+  font-family: Arial;
+  color: black;
 }
 
 #left-side {
-    width: 200px;
+  width: 200px;
 }
 
 #center-side {
-    width: 330px;
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    background-image: url(images/logo.png);
+  width: 330px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
 }
 
 #center-side a {
-    color: green;
-    text-decoration: none;
-    background-image: url(images/logo.png);
-
+  color: green;
+  text-decoration: none;
 }
 
 #center-side a:hover {
-    color: blue;
+color: red;
 }
 
 #right-side {
-    width: 200px;
+  width: 200px;
 }
 
-#left-side, #center-side, #right-side {
-    border: 2px solid black;
-    height: 300px;
-    margin: auto;
-    margin-top: 25px;
+#left-side,
+#center-side,
+#right-side {
+  border: 2px solid black;
+  height: 300px;
+  margin: auto;
+  margin-top: 25px;
 }
 
 #left-side ul {
-    font-family: Arial;
-    font-size: 1.5em;
-    color: black;
+  font-family: Arial;
+  font-size: 1.5em;
+  color: black;
 }
 
 #left-side li {
-    margin-bottom: 0.7em;
-    padding: 0.3em;
+  margin-bottom: 0.7em;
+  padding: 0.3em;
 }
 
 #left-side a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-#left-side a:hover {
-    color: red;
-}
-
-#left-side a:visited {
-    font-family: Verdana;
-    color: blue;
-}
-
-#left-side a:visited:hover {
-    color: red;
-}
 
 #right-side table {
-    font-family: Arial;
-    font-size: 1.5em;
-    color: black;
+  font-family: Arial;
+  font-size: 1.5em;
+  color: black;
 }
 
 #right-side tr {
-    padding-bottom: 1.5em;
-}
-
-#right-side a {
-    color: green;
-    text-decoration: none;
-}
-
-#right-side a:hover {
-    color: blue;
-}
-
-#right-side a:visited {
-    font-family: Verdana;
-    color: green;
-}
-
-#right-side a:visited:hover {
-    color: blue;
+  padding-bottom: 1.5em;
 }
 
 #pie-pagina {
-    border: 2px solid black;
-    margin-top: 25px;
+  border: 2px solid black;
+  margin-top: 25px;
 }
 
 #pie-pagina p {
-    font-size: 0.8em;
-    text-align: center;
-    font-style: italic;
+  font-size: 0.8em;
+  text-align: center;
+  font-style: italic;
 }
