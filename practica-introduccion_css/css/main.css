@@ -29,7 +29,8 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.3em;
+    margin-bottom: 0.7em;
     text-decoration: none;
 }
 
@@ -78,15 +79,16 @@ p {
 #cabecera {
     position: absolute;
     right: 0px;
-    width: 920px;
+    width: 1000px;
     height: 100px;
 }
 
 #parte-izquierda {
     float: left;
     position: relative;
-    width: 50%;
+    width: 300px;
     background-color: crimson;
+    border: 1px solid black;
 }
 
 #parte-derecha-left {
@@ -96,8 +98,9 @@ p {
     height: 600px;
     text-align: center;
     position: relative;
-    width: 385px;
+    width: 465px;
     background-color: saddlebrown;
+    border: 1px solid black;
 }
 
 #parte-derecha-right {
@@ -108,4 +111,9 @@ p {
     position: absolute;
     width: 430px;
     background-color: green;
+    border: 1px solid black;
+}
+
+#pie-pagina {
+    bottom: 0px;
 }
