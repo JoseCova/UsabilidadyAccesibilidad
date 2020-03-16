@@ -83,6 +83,14 @@ p {
     height: 100px;
 }
 
+#cabecera_jpg {
+    position: absolute;
+    float: right;
+    right: 0px;
+    height: 400px;
+    width: 1000px;
+}
+
 #parte-izquierda {
     float: left;
     position: relative;
@@ -93,9 +101,8 @@ p {
 
 #parte-derecha-left {
     float: left;
-    left: 40px;
+    left: 45px;
     top: 80px;
-    height: 600px;
     text-align: center;
     position: relative;
     width: 465px;
