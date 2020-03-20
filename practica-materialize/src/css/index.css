@@ -1,4 +1,7 @@
 /* CSS del header */
+.row-heading {
+  margin-bottom: 0;
+}
 .col-heading {
   background: linear-gradient(to right,#90a4ae, #78909c, #607d8b);
   height: 100px;
@@ -11,9 +14,23 @@
   font-size: 2.1875rem;
   text-shadow: 0.5px 1.5px silver;
   color:	#b3b3b3;
-  margin-left: inherit;
 }
 
+/* Resize para móviles con menos de 258 pixeles de ancho */
+@media screen and (max-width: 258px){
+  .heading-text  {
+    font-size: 1.9rem
+  }
+}
 /* Si tal corregir posicion del heading-text que no me gusta mucho donde esta, aunque está en el medio */
 
 /*Fin CSS del header */
+
+/* CSS navbar */
+
+
+
+
+
+/* Fin CSS del navbar */
+
