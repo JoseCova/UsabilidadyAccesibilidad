@@ -26,6 +26,26 @@
 
 /*Fin CSS del header */
 
+.container{
+  background-color: aqua;
+}
+
+.col{
+  background-color: lightcoral;
+}
+
+.row{
+  background-color: green;
+}
+
+.w3-container{
+  background-color: aqua;
+}
+
+.w3-col{
+  background-color: blueviolet;
+}
+
 /* CSS navbar */
 
 
