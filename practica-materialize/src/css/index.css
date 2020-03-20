@@ -1,0 +1,19 @@
+/* CSS del header */
+.col-heading {
+  background: linear-gradient(to right,#90a4ae, #78909c, #607d8b);
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+
+.heading-text {
+  font-size: 2.1875rem;
+  text-shadow: 0.5px 1.5px silver;
+  color:	#b3b3b3;
+  margin-left: inherit;
+}
+
+/* Si tal corregir posicion del heading-text que no me gusta mucho donde esta, aunque está en el medio */
+
+/*Fin CSS del header */
