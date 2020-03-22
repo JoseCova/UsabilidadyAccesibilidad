@@ -3,7 +3,7 @@
   margin-bottom: 0;
 }
 .col-heading {
-  background: linear-gradient(to right,#90a4ae, #78909c, #607d8b);
+  background: linear-gradient(to right, #90a4ae, #78909c, #607d8b);
   height: 100px;
   width: 100%;
   text-align: center;
@@ -11,46 +11,85 @@
 }
 
 .heading-text {
-  font-size: 2.1875rem;
+  font-size: 3.1875rem;
   text-shadow: 0.5px 1.5px silver;
-  color:	#b3b3b3;
+  color: #b3b3b3;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 /* Resize para móviles con menos de 258 pixeles de ancho */
-@media screen and (max-width: 258px){
-  .heading-text  {
-    font-size: 1.9rem
+@media screen and (max-width: 258px) {
+  .heading-text {
+    font-size: 1.9rem;
   }
 }
 /* Si tal corregir posicion del heading-text que no me gusta mucho donde esta, aunque está en el medio */
+/* Corregir tamaño en distintas resoluciones*/
 
 /*Fin CSS del header */
 
-.container{
-  background-color: aqua;
-}
-
-.col{
-  background-color: lightcoral;
-}
-
-.row{
-  background-color: green;
-}
-
-.w3-container{
-  background-color: aqua;
-}
-
-.w3-col{
-  background-color: blueviolet;
-}
-
 /* CSS navbar */
 
-
-
-
-
 /* Fin CSS del navbar */
+
+/* CSS para contenido de la página */
+/** CSS de la descripción de la página */
+.row-desc {
+  margin-bottom: 10px;
+}
+.description {
+  background: aqua;
+  text-align: center;
+}
+
+.description > a {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.description p {
+  margin-top: 5px;
+  font-size: 1.3em;
+}
+/* Fin CSS descripcion */
+
+/* CSS segunda fila col derecha e izq */
+.col-izq {
+  background-color: chartreuse;
+}
+
+.col-izq  > h2 {
+  font-size: 2.5rem;
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+.col-izq h3 {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.col-izq ol {
+  margin-left: 10px;
+  padding-left: 20px;
+}
+
+.col-der {
+  background-color: chocolate;
+}
+
+.col-der  > h2 {
+  font-size: 2.2rem;
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+.col-der h3 {
+  font-size: 1.7rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
 
