@@ -12,6 +12,8 @@
 
 **Uso de la web por personas con disfuncionalidad:** [Seminario Disfuncionalidad](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/seminario-disfuncionalidad)
 
+**Legislación:** [Legislación](https://view.genial.ly/5e68ea5175ef8e0fc17ce5e0/horizontal-infographic-timeline-legislacion)
+
 #### Prácticas
 
 **Introducción al protocolo HTTP:** [protocoloHTTP](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica_http)
