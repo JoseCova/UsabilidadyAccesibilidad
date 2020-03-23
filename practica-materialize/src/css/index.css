@@ -93,3 +93,17 @@
   margin-bottom: 5px;
 }
 
+
+/*CSS del formulario */
+form {
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.inside {
+  margin-left:15px;
+}
+
+.row-form {
+  margin-bottom: 10px;
+}
