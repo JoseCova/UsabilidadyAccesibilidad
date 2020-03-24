@@ -4,7 +4,9 @@ let parrafos = document.getElementsByTagName("p");
 // Enlaces del DOM
 let links = document.getElementsByTagName("a");
 
+// Acumulador de todos los encabezados
 let headers = 0;
+// Como sabemos que hay del h1 al h6, recogemos la cantidad de cada uno e incrementamos en el acumulador
 for(let i = 1; i <= 6; i++){
   let totalheaders = document.getElementsByTagName('h'+ i)
   headers+= totalheaders.length;
