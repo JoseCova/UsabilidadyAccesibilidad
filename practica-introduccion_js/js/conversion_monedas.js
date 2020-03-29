@@ -41,11 +41,7 @@ function conversion() {
         document.body.appendChild(parrafo);
     } else {
         text = `
-		Introduzca un tipo de moneda que esté soportado...
-		eur para Euros
-		dollar para US Dollars
-		yen para Yenes Japoneses
-		pesos para Pesos Argentinos
+		No ha elegido ninguna moneda...
 		`;
         parrafo.textContent = text;
         document.body.appendChild(parrafo);
