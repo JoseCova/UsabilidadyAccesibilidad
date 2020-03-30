@@ -1,4 +1,3 @@
-'use strict';
 // Párrafos del DOM
 let parrafos = document.getElementsByTagName("p");
 // Enlaces del DOM
