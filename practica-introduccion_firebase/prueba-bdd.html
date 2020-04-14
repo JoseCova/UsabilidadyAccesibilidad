@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba BDD </title>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+</head>
+
+<body>
+
+
+
+  <script>
+    // Your web app's Firebase configuration
+    let firebaseConfig = {
+      apiKey: "AIzaSyAli2oAWtiwIZ81UL79t4RSjiClk9uiHgk",
+      authDomain: "prueba-uya.firebaseapp.com",
+      databaseURL: "https://prueba-uya.firebaseio.com",
+      projectId: "prueba-uya",
+      storageBucket: "prueba-uya.appspot.com",
+      messagingSenderId: "871534654541",
+      appId: "1:871534654541:web:8cc335b98dcaab628ad804"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // get database 
+    let bdd = firebase.database();
+
+    // Crear nueva entrada entrada en la base de datos 
+    let bddref = bdd.ref("libros");
+
+
+    // Objeto que se va a insertar en la base de datos
+    let libro = {
+      autor: "Ernest Hemingway",
+      titulo: "El viejo y el mar",
+      año: 1952
+    };
+
+    bddref.set(libro)
+    .then(() => console.log("Se ha introducido correctamente"))
+    .catch(error => console.log(`Ups, ha habido un error: ${error}`));
+  </script>
+
+</body>
+
+</html>
