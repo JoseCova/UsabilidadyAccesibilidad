@@ -25,3 +25,7 @@
 **Introducción a Materialize:** [Materialize](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-materialize/src)
 
 **Introducción a JavaScript:** [JavaScript](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-introduccion_js)
+
+**Introducción a Ajax:** [Ajax](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-introduccion_ajax)
+
+**Introducción a Firebase:** [Firebase](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-introduccion_firebase)
