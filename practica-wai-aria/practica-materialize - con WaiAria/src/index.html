@@ -37,7 +37,7 @@
     <!-- Fin contenido del header -->
 
     <!--Navbar-->
-    <nav>
+    <nav role="toolbar">
         <div class="nav-wrapper">
             <a tabindex="0" href="#!" class="brand-logo"><img src="assets/images/logo.jfif" alt="logo banco de tiempo" height=65 width=65> </a>
             <ul class="right hide-on-med-and-down">
@@ -54,7 +54,7 @@
     <div class="row row-desc">
         <div class="col s12 m12 l12 xl12 description">
             <a tabindex="0" href="https://es.wikipedia.org/wiki/Banco_de_tiempo"><b>¿Qué es el banco de tiempo?</b></a>
-            <p tabindex="0">Nuestra aplicación <strong>banco de tiempo</strong> creará un equilibrio entre todos los
+            <p role="main" tabindex="0">Nuestra aplicación <strong>banco de tiempo</strong> creará un equilibrio entre todos los
                 usuarios de la misma, ya que cada comunidad dentro de la misma, estará conformada por personas conocidas
                 entre sí, con un alto nivel de confianza y que
                 se intercambiarán favores, generando unos tickets.
@@ -73,7 +73,7 @@
         <div class="col s12 m6 l6 xl6 col-izq">
             <h2 tabindex="0" class="flow-text">¿Cómo vamos a proceder?</h2>
             <h3 tabindex="0" class="flow-text">Procedimiento</h3>
-            <ol>
+            <ol role="list">
                 <li tabindex="0">Analizar que usuarios y en qué contexto usan el intercambio de favores</li>
                 <li tabindex="0">Ver qué perfiles podemos distinguir dentro de esos usuarios y qué escenarios hay</li>
                 <li tabindex="0">Analizar qué es lo que están buscando</li>
@@ -102,7 +102,7 @@
         <div class="col s12 m6 l6 xl6 col-der">
             <h2 tabindex="0" class="flow-text"> ¿Cuáles son nuestros objetivos al desarrollar esta aplicación? </h2>
             <h3 tabindex="0" class="flow-text">Objetivos</h3>
-            <ul>
+            <ul role="list">
                 <li tabindex="0">Desarrollar una plataforma que pueda usar como alternativa a un método de pago</li>
                 <li tabindex="0">Qué sirva de ayuda a personas con tiempo limitado que necesitan favores que requieren
                     de un alto grado de confianza para poder dejarlos en manos de otro
@@ -122,7 +122,7 @@
         <!-- Columna derecha -->
         <div class="col s12 m6 l6 xl6">
             <h3 tabindex="0" class="flow-text">Diseño</h3>
-            <table class="centered resposive-table">
+            <table role="table" class="centered resposive-table">
                 <summary tabindex="0">Tabla con un <strong>supuesto</strong> ranking de los usuarios mejor valorados del
                     banco de tiempo
                 </summary>
@@ -165,12 +165,12 @@
                 <div class="row">
                     <div class="input-field col s6 m6 l6 xl6">
                         <label tabindex="0" for="Nombre">Nombre</label>
-                        <input id="nombre" placeholder="Introduzca su nombre" type="text" class="validate">
+                        <input id="nombre" placeholder="Introduzca su nombre" type="text" class="validate" aria-required="true">
                     </div>
 
                     <div class="input-field col s6 m6 l6 xl6">
                         <label tabindex="0" for="ID">ID</label>
-                        <input id="ID" placeholder="Introduzca su ID" type="text" class="validate">
+                        <input id="ID" placeholder="Introduzca su ID" type="text" class="validate" aria-required="true">
                     </div>
                 </div>
                 <!-- Fin de la fila -->
@@ -182,19 +182,19 @@
                 <div class="row">
                     <div class="col s4 m4 l4 xl4">
                         <label tabindex="0" for="botonhombre">
-                            <input id="botonhombre" type="radio" name="sexo" />
+                            <input id="botonhombre" type="radio" name="sexo"/>
                             <span class="flow-text">Hombre</span>
                         </label>
                     </div>
                     <div class="col s4 m4 l4 xl4">
                         <label tabindex="0" for="botonmujer">
-                            <input id="botonmujer" type="radio" name="sexo" />
+                            <input id="botonmujer" type="radio" name="sexo"/>
                             <span class="flow-text">Mujer</span>
                         </label>
                     </div>
                     <div class="col s4 m4 l4 xl4">
                         <label tabindex="0" for="botonnc">
-                            <input id="botonnc" type="radio" name="sexo" />
+                            <input id="botonnc" type="radio" name="sexo"/>
                             <span class="flow-text">NC</span>
                         </label>
                     </div>
@@ -210,14 +210,14 @@
                 <div class="row row-form">
                     <div class="col s6 m6 l6 xl6">
                         <label tabindex="0" for="botonsi">
-                            <input id="botonsi" type="radio" name="yes" />
+                            <input id="botonsi" type="radio" name="yes"/>
                             <span class="flow-text">Si </span>
                         </label>
                     </div>
 
                     <div class="col s6 m6 l6 xl6">
                         <label tabindex="0" for="botonno" >
-                            <input id="botonno" type="radio" name="yes" />
+                            <input id="botonno" type="radio" name="yes"/>
                             <span class="flow-text">No</span>
                         </label>
                     </div>
@@ -235,7 +235,7 @@
                 </div>
                 <!-- Fin fila -->
 
-                <button class="btn waves-effect waves-light send" type="submit" name="action">Enviar
+                <button aria-label="Enviar" class="btn waves-effect waves-light send" type="submit" name="action">Enviar
                     <i class="material-icons right">send</i>
                 </button>
             </form>
@@ -245,7 +245,7 @@
     <!-- Fin fila grande -->
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer role="contentinfo" class="page-footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">

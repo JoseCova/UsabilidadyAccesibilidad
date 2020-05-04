@@ -14,13 +14,13 @@
 </head>
 
 <body>
-  <header>
+  <header role="heading">
     <h1 tabindex="0">Página web del grupo 10 - Usabilidad y Accesibilidad </h1>
     <h2 tabindex="0">Aplicación Banco de Tiempo</h2>
-    <img src="imagenes/banco_tiempo.png" height="250" width="500">
+    <img role="img" src="imagenes/banco_tiempo.png" height="250" width="500">
   </header>
   <a href="https://es.wikipedia.org/wiki/Banco_de_tiempo"><b>¿Qué es el banco de tiempo?</b></a>
-  <p tabindex="0">Nuestra aplicación <strong>banco de tiempo</strong> creará un equilibrio entre todos los usuarios de
+  <p role="main" tabindex="0">Nuestra aplicación <strong>banco de tiempo</strong> creará un equilibrio entre todos los usuarios de
     la misma,
     ya que cada comunidad dentro de la misma,
     <br>
@@ -35,7 +35,7 @@
   <br>
   <h2 tabindex="0">¿Cómo vamos a proceder? ¿Cuáles son nuestros objetivos al desarrollar esta aplicación?</h2>
   <h3 tabindex="0">Procedimiento</h3>
-  <ol tabindex="0">
+  <ol role="list" tabindex="0">
     <li tabindex="0">Analizar que usuarios y en qué contexto usan el intercambio de favores</li>
     <li tabindex="0">Ver qué perfiles podemos distinguir dentro de esos usuarios y qué escenarios hay</li>
     <li tabindex="0">Analizar qué es lo que están buscando</li>
@@ -57,7 +57,7 @@
     </li>
   </ol>
   <h3 tabindex="0">Objetivos</h3>
-  <ul tabindex="0">
+  <ul role="list" tabindex="0">
     <li tabindex="0">Desarrollar una plataforma que pueda usar como alternativa a un método de pago</li>
     <li tabindex="0">Qué sirva de ayuda a personas con tiempo limitado que necesitan favores que requieren
       de un alto grado de confianza para poder dejarlos en manos de otro
@@ -68,7 +68,7 @@
   </ul>
 
   <h3 tabindex="0">Diseño</h3>
-  <table tabindex="0">
+  <table role="table" tabindex="0">
     <summary tabindex="0">Tabla con un <strong>supuesto</strong> ranking de los usuarios mejor valorados del banco de
       tiempo</summary>
     </br>
@@ -100,38 +100,38 @@
   </br>
   <h4 tabindex="0">Ejemplo de cuestionario de satisfacción despues de un evento</h4>
   <form action="#" method="GET">
-    <label for="nombre">Nombre</label> <input id="nombre" type="text" placeholder="Introduzca su nombre"> <br> <br>
-    <label for="id">ID</label> <input id="id" type="number" placeholder="Introduzca su ID"> <br><br>
+    <label for="nombre">Nombre</label> <input id="nombre" type="text" placeholder="Introduzca su nombre" aria-required="true"> <br> <br>
+    <label for="id">ID</label> <input id="id" type="number" placeholder="Introduzca su ID" aria-required="true"> <br><br>
     <label tabindex="0">Sexo
-      <input id="hombre" type="radio">
+      <input id="hombre" type="radio" aria-required="true">
       <label tabindex="0" for="hombre">Hombre</label>
-      <input id="mujer" type="radio"> 
+      <input id="mujer" type="radio" aria-required="true"> 
       <label tabindex="0" for="mujer">Mujer </label>
-      <input id="nc" type="radio"> 
+      <input id="nc" type="radio" aria-required="true"> 
       <label tabindex="0" for="nc">NC </label>
     </label><br><br>
 
     <label tabindex="0">¿Ha cumplido el usuario *nombre usuario* con la enmienda acordada? </label>
-    <input id="Si" type="radio">
+    <input id="Si" type="radio" aria-required="true">
     <label tabindex="0" for="Si"> Si</label>
-    <input id="No" type="radio"> 
+    <input id="No" type="radio" aria-required="true"> 
     <label tabindex="0" for="No">No</label>
     </br><br>
     <label tabindex="0"> Del 1 al 5 califique el servicio ofrecido por *nombre usuario*</label>
-    <label tabindex="0" for="uno"> 1 <input id="uno" type="radio"></label> 
-    <label tabindex="0" for="dos"> 2 <input id="dos" type="radio"></label> 
-    <label tabindex="0" for="tres"> 3 <input id="tres" type="radio"></label> 
-    <label tabindex="0" for="cuatro"> 4 <input id="cuatro" type="radio"></label> 
-    <label tabindex="0" for="cinco"> 5 <input id="cinco" type="radio"></label> 
+    <label tabindex="0" for="uno"> 1 <input id="uno" type="radio" aria-required="true"></label> 
+    <label tabindex="0" for="dos"> 2 <input id="dos" type="radio" aria-required="true"></label> 
+    <label tabindex="0" for="tres"> 3 <input id="tres" type="radio" aria-required="true"></label> 
+    <label tabindex="0" for="cuatro"> 4 <input id="cuatro" type="radio" aria-required="true"></label> 
+    <label tabindex="0" for="cinco"> 5 <input id="cinco" type="radio" aria-required="true"></label> 
    
     <br>
     <h5 tabindex="0">Si tiene algún comentario déjelo aquí</h5>
     <textarea placeholder=";)" cols="35" rows="10"></textarea>
     <br>
-    <input type="submit">
+    <input type="submit" aria-label="Enviar">
   </form>
 
-  <footer>
+  <footer role="contentinfo">
     <h4 tabindex="0">Muchas gracias por usar nuestra aplicación</h4>
     <p tabindex="0">Contacto: <br>
       Néstor Torres Díaz: <strong>alu0101021768@ull.edu.es</strong> <br>
