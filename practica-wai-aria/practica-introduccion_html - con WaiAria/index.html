@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title> Banco de tiempo </title>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos">
+  <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar">
+  <meta name="author" content="Néstor Torres Díaz">
+  <meta name="author" content="Edgar Figueroa González">
+  <meta name="author" content="José Javier Caraballo Cova">
+  <link rel="icon" href="./imagenes/favicon.png">
+</head>
+
+<body>
+  <header>
+    <h1 tabindex="0">Página web del grupo 10 - Usabilidad y Accesibilidad </h1>
+    <h2 tabindex="0">Aplicación Banco de Tiempo</h2>
+    <img src="imagenes/banco_tiempo.png" height="250" width="500">
+  </header>
+  <a href="https://es.wikipedia.org/wiki/Banco_de_tiempo"><b>¿Qué es el banco de tiempo?</b></a>
+  <p tabindex="0">Nuestra aplicación <strong>banco de tiempo</strong> creará un equilibrio entre todos los usuarios de
+    la misma,
+    ya que cada comunidad dentro de la misma,
+    <br>
+    estará conformada por personas conocidas entre sí, con un alto nivel de confianza y que se intercambiarán favores,
+    generando unos tickets.
+    <br>
+    Todo esto es aún un prototipo puesto que no sabemos que es lo que los usuarios de nuestra app prefieren
+    y con qué cosas se sienten cómodas
+    <br>
+    o no y si hay algún objetivo que no consiguen dentro de la app.
+  </p>
+  <br>
+  <h2 tabindex="0">¿Cómo vamos a proceder? ¿Cuáles son nuestros objetivos al desarrollar esta aplicación?</h2>
+  <h3 tabindex="0">Procedimiento</h3>
+  <ol tabindex="0">
+    <li tabindex="0">Analizar que usuarios y en qué contexto usan el intercambio de favores</li>
+    <li tabindex="0">Ver qué perfiles podemos distinguir dentro de esos usuarios y qué escenarios hay</li>
+    <li tabindex="0">Analizar qué es lo que están buscando</li>
+    <li tabindex="0">Pensar en un diseño que se ajuste a lo que se busca según la información recogida</li>
+    <li tabindex="0">Durante el diseño, siempre que se termine un entregable se pondrá a prueba con los usuarios
+      de la app, para ver si todo va tal y como se esperaba
+    </li>
+    <li tabindex="0">Trabajaremos con entregables, usando metodologías ágiles que nos permitan
+      una gran flexibilidad al cambio en caso de que los entregables no cumplan con lo esperado.
+    </li>
+    <li tabindex="0">Preparar varios prototipos a papel para testear su uso en los usuarios y constrastar la
+      retroalimentación obtenida para diseñar otros prototipos que se ajusten más a lo que los
+      usuarios buscan</li>
+    <li tabindex="0">Cuando encontremos un prototipo a papel que se ajuste a las necesidades de los usuarios ,
+      pasaremos a diseñar un prototipo real y volveremos a realizar test con los usuarios para ver
+      qué cosas hay que ir modificando</li>
+    <li tabindex="0">Los prototipos irán evolucionando, ya que se trata de un proceso iterativo e incremental hasta
+      llegar al prototipo final
+    </li>
+  </ol>
+  <h3 tabindex="0">Objetivos</h3>
+  <ul tabindex="0">
+    <li tabindex="0">Desarrollar una plataforma que pueda usar como alternativa a un método de pago</li>
+    <li tabindex="0">Qué sirva de ayuda a personas con tiempo limitado que necesitan favores que requieren
+      de un alto grado de confianza para poder dejarlos en manos de otro
+    </li>
+    <li tabindex="0">Qué la app sirva para estrechar lazos aún más entre personas que ya se conocían</li>
+    <li tabindex="0">Qué nos ayude a entender y aplicar correctamente el desarrollo centrado en el usuario </li>
+    <li tabindex="0">Obtener experiendo en el desarrollo de software</li>
+  </ul>
+
+  <h3 tabindex="0">Diseño</h3>
+  <table tabindex="0">
+    <summary tabindex="0">Tabla con un <strong>supuesto</strong> ranking de los usuarios mejor valorados del banco de
+      tiempo</summary>
+    </br>
+    <tr>
+      <td colspan="2" tabindex="0"><em>Nombre</em></td>
+      <td colspan="3" tabindex="0"><em>ID</em></td>
+      <td colspan="2" tabindex="0"><em>Ranking</em></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" tabindex="0">Juan</td>
+      <td colspan="3" tabindex="0">922</td>
+      <td colspan="4" tabindex="0">1º</td>
+    </tr>
+
+    <tr>
+      <td colspan="2" tabindex="0">Adassa</td>
+      <td colspan="3" tabindex="0">928</td>
+      <td colspan="4" tabindex="0">2º</td>
+    </tr>
+
+    <tr>
+      <td colspan="2" tabindex="0">Imobach</td>
+      <td colspan="3" tabindex="0">057</td>
+      <td colspan="4" tabindex="0">3º</td>
+    </tr>
+  </table>
+
+  </br>
+  <h4 tabindex="0">Ejemplo de cuestionario de satisfacción despues de un evento</h4>
+  <form action="#" method="GET">
+    <label for="nombre">Nombre</label> <input id="nombre" type="text" placeholder="Introduzca su nombre"> <br> <br>
+    <label for="id">ID</label> <input id="id" type="number" placeholder="Introduzca su ID"> <br><br>
+    <label tabindex="0">Sexo
+      <input id="hombre" type="radio">
+      <label tabindex="0" for="hombre">Hombre</label>
+      <input id="mujer" type="radio"> 
+      <label tabindex="0" for="mujer">Mujer </label>
+      <input id="nc" type="radio"> 
+      <label tabindex="0" for="nc">NC </label>
+    </label><br><br>
+
+    <label tabindex="0">¿Ha cumplido el usuario *nombre usuario* con la enmienda acordada? </label>
+    <input id="Si" type="radio">
+    <label tabindex="0" for="Si"> Si</label>
+    <input id="No" type="radio"> 
+    <label tabindex="0" for="No">No</label>
+    </br><br>
+    <label tabindex="0"> Del 1 al 5 califique el servicio ofrecido por *nombre usuario*</label>
+    <label tabindex="0" for="uno"> 1 <input id="uno" type="radio"></label> 
+    <label tabindex="0" for="dos"> 2 <input id="dos" type="radio"></label> 
+    <label tabindex="0" for="tres"> 3 <input id="tres" type="radio"></label> 
+    <label tabindex="0" for="cuatro"> 4 <input id="cuatro" type="radio"></label> 
+    <label tabindex="0" for="cinco"> 5 <input id="cinco" type="radio"></label> 
+   
+    <br>
+    <h5 tabindex="0">Si tiene algún comentario déjelo aquí</h5>
+    <textarea placeholder=";)" cols="35" rows="10"></textarea>
+    <br>
+    <input type="submit">
+  </form>
+
+  <footer>
+    <h4 tabindex="0">Muchas gracias por usar nuestra aplicación</h4>
+    <p tabindex="0">Contacto: <br>
+      Néstor Torres Díaz: <strong>alu0101021768@ull.edu.es</strong> <br>
+      Edgar Figueroa González: <strong>alu0101043838@ull.edu.es</strong> <br>
+      José Javier Caraballo Cova: <strong>alu0101023663@ull.edu.es</strong> <br>
+    </p>
+  </footer>
+</body>
+
+</html>
