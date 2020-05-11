@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Carousel</title>
+        <title>Collapsible</title>
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
@@ -21,23 +21,55 @@
 <body>
 <ul class="collapsible">
     <li>
-      <div button="collapsible" class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div button="collapsible" aria-expanded="true" class="collapsible-header" id="boton1" aria-controls="body1"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body body1"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
     <li>
-      <div button="collapsible" class="collapsible-header"><i class="material-icons">place</i>Second</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div button="collapsible" aria-expanded="true" class="collapsible-header" id="boton2" aria-controls="body2"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Me gustaría aprobar UyA en Junio.</span></div>
     </li>
     <li>
-      <div button="collapsible" class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div button="collapsible" aria-expanded="true" class="collapsible-header" id="boton3" aria-controls="body3"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Quisiera ser cantante.</span></div>
     </li>
   </ul>
   <script>
-      document.addEventListener('DOMContentLoaded', function() {
+
+  document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
+    var instances = M.Collapsible.init(elems);
   });
+ 
+  /* Código para controlar los botones del collapsible */
+  const firstButton = document.querySelector("#boton1");
+    firstButton.onclick = () => {
+      const firstBody = document.querySelector("#body1").getAttribute("hidden");
+        if (body1 === "false" || body1 === "") {
+          document.querySelector("#body1").setAttribute("hidden", "true");
+        } else { 
+          document.querySelector("#body1").setAttribute("hidden", "false");
+         }
+    }
+      
+  const secondButton = document.querySelector("#boton2");
+    secondButton.onclick = () => {
+      const secondBody = document.querySelector("#body2").getAttribute("hidden");
+        if (body2 === "false" || body2 === "") {
+          document.querySelector("#body2").setAttribute("hidden", "true");
+        } else {
+          document.querySelector("#body2").setAttribute("hidden", "false");
+        }
+    }
+    
+  const thirdButton = document.querySelector("#boton3");
+    thirdButton.onclick = () => {
+      const thirdBody = document.querySelector("#body3").getAttribute("hidden");
+        if (body3 === "false" || body3 === "") {
+          document.querySelector("#body3").setAttribute("hidden", "true");
+        } else {
+          document.querySelector("#body3").setAttribute("hidden", "false");
+        }
+    }
   </script>
   </body>
 
