@@ -1,14 +1,40 @@
-<nav aria-label=”breadcrumbs”>
-    <div class="nav-wrapper">
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breadcrumbs</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    media="screen">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!--Let browser know website is optimized for mobile-->
+  <link type="text/css" rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper" aria-label="breadcrumbs">
       <div class="col s12">
-	<ol>
-        <li> <a href="#!" class="breadcrumb">First</a> </li>
-	   <span aria-hidden=”true”> > </span>
-        <li> <a href="#!" class="breadcrumb">Second</a> </li>
-	   <span aria-hidden=”true”> > </span>
-   <li> <a aria-current=”location” href="#!" class=”breadcrumb”> Third </a> 
-   </li> 
-	</ol>
+        <ol>
+          <a href="#!" class="breadcrumb" aria-hidden="true">  First</a>
+          <a href="#!" class="breadcrumb" aria-hidden="true">Second</a>
+          <a href="#!" class="breadcrumb" aria-hidden="true" aria-current="location"> Third </a>
+        </ol>
       </div>
     </div>
   </nav>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
