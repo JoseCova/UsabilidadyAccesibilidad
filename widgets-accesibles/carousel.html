@@ -23,6 +23,8 @@
 
    <script> 
     
+  const documento = document.querySelector("html");
+  documento.addEventListener("DOM")
   $(document).ready(function(){
     $('.carousel').carousel();
   });
@@ -43,7 +45,6 @@ $('#prev').on('touchstart', function (e) {
     e.stopPropagation();
     $('#carouselFirst').carousel('prev');
 });
-  
     </script>
   
   </body>
