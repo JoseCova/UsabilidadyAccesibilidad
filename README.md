@@ -32,4 +32,6 @@
 
 **WAI-Aria:** [WAI-Aria](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-wai-aria)
 
+**Widgets Accesibles:** [Widgets-Accesibles](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/widgets-accesibles)
+
 **Proyecto Final :** [PF](https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/proyecto-final)
