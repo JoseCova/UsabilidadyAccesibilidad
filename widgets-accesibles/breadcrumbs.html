@@ -8,14 +8,17 @@
 
 <body>
 
-  <nav>
-    <div class="nav-wrapper" aria-label="breadcrumbs">
+  <nav aria-label=”breadcrumbs”>
+    <div class="nav-wrapper">
       <div class="col s12">
-        <ol>
-          <a href="#!" class="breadcrumb"> <span area-hidden="true"> > </span> First</a>
-          <a href="#!" class="breadcrumb">  <span area-hidden="true"> > </span> Second</a>
-          <a href="#!" class="breadcrumb" aria-current="location"><span area-hidden="true"> > </span>Third</a>
-        </ol>
+	<ol>
+        <span aria-hidden="true"> > </span>
+        <li> <a href="#!" class="breadcrumb">First</a> </li>
+	        <span aria-hidden="true"> > </span>
+        <li> <a href="#!" class="breadcrumb">Second</a> </li>
+	        <span aria-hidden=”true”> > </span>
+        <li> <a aria-current=”location” href="#!" class=”breadcrumb”> Third </a></li> 
+	</ol>
       </div>
     </div>
   </nav>
