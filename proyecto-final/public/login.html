@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Inicio de sesión | Banco de tiempo grupo 10</title>
+    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos"
+    />
+    <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
+    <meta name="author" content="Néstor Torres Díaz" />
+    <meta name="author" content="Edgar Figueroa González" />
+    <meta name="author" content="José Javier Caraballo Cova" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Falta añadir un favicon -->
+
+    <!-- CSS materialize-->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      defer
+    ></script>
+    <!-- Fin CSS materialize-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="./js/init.js" defer></script>
+    <!-- Fin scripts firebase-->
+
+    <!-- CSS propio-->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <!-- Navbar web-->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
+          <img class="logo" src="./assets/images/logo2.png" alt="logo" />
+        </a>
+        <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul id="nav-mobile" role="navigation" class="right hide-on-med-and-down">
+          <li><a href="formulario.html">Formulario </a></li>
+          <li><a href="favores.html">Favores</a></li>
+          <li class="active"><a href="login.html">Inicio sesión</a></li>
+          <li><a href="quienSomos.html">¿Quiénes somos?</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--Fin navbar web-->
+    <!-- Navbar movil -->
+    <ul class="sidenav" id="mobile-demo" aria-label="Inicio">
+      <li><a tabindex="-1" href="formulario.html">Formulario</a></li>
+      <li><a tabindex="-1" href="favores.html">Favores</a></li>
+      <li class="active"><a tabindex="-1" href="login.html">Inicio sesión</a></li>
+      <li><a tabindex="-1" href="quienSomos.html">¿Quiénes somos?</a></li>
+    </ul>
+    <!-- Fin Navbar movil -->
+    <!-- Breadcrumbs -->
+    <nav aria-label="”breadcrumbs”">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a href="index.html" class="breadcrumb">Inicio</a>
+          <a href="login.html" class="breadcrumb">Iniciar sesión</a>
+        </div>
+      </div>
+    </nav>
+    <!--Fin breadcrumbs-->
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 tabindex="0" class="white-text">Muchas gracias por usar nuestra aplicación</h5>
+            <p class="grey-text text-lighten-4">
+              Contacto: <br />
+              <i tabindex="0" class="material-icons">mail</i> Néstor Torres Díaz:
+              <strong>alu0101021768@ull.edu.es</strong> <br />
+              <i tabindex="0" class="material-icons">mail</i> Edgar Figueroa González:
+              <strong>alu0101043838@ull.edu.es</strong> <br />
+              <i tabindex="0" class="material-icons">mail</i> José Javier Caraballo Cova:
+              <strong>alu0101023663@ull.edu.es</strong><br />
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-materialize/src"
+                  >Github</a
+                >
+              </li>
+              <li><a class="grey-text text-lighten-3" href="https://www.ull.es/">ULL</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.w3.org/">W3C</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        Usabilidad y Accesibilidad Grupo 10
+      </div>
+    </footer>
+    <!-- Fin footer -->
+  </body>
+</html>
