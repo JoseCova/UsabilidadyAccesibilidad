@@ -24,6 +24,21 @@ body {
 }
 /* Fin CSS navbar */
 
+
+/* CSS página iniciar sesión */
+
+.logbutton {
+  background-color: cornflowerblue;
+  color: white;
+  border: solid black;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+}
+
+/* Fin CSS página iniciar sesión */
+
 /* CSS página de quienes somos */
 .header-wrapper {
   display: flex;
