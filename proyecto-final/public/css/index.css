@@ -1,0 +1,14 @@
+/* CSS navbar */
+.nav-wrapper{
+  background: cornflowerblue;
+}
+.nav-wrapper li:hover {
+  background: #6666ff;
+
+}
+
+.logo {
+  width: 3em;
+  height: 2em;
+  margin-left: 1em;
+}

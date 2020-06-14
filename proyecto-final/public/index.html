@@ -4,20 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prueba backend</title>
+  <title>Inicio | Banco de tiempo grupo 10</title>
+
+  <!-- CSS materialize-->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+  <!-- Fin CSS materialize-->
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
-  <link href="./css/index.css">
   <script src="./js/init.js" defer></script>
+  <!-- Fin scripts firebase-->
+
+  <!-- CSS propio-->
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-  <div class="container"> Pareces un chasirasi </div>
+  <!-- Navbar web-->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
+        <img  class="logo" src="./assets/images/logo.png" alt="logo">
+      </a>
+      <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" role="navigation" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Formulario </a></li>
+        <li><a href="badges.html">Favores</a></li>
+        <li><a href="collapsible.html">Inicio sesión</a></li>
+        <li><a href="collapsible.html">¿Quiénes somos?</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Fin navbar web-->
+  <!-- Navbar movil -->
+  <ul class="sidenav" id="mobile-demo" aria-label="Inicio">
+    <li><a href="#">Formulario</a></li>
+    <li><a href="#">Favores</a></li>
+    <li><a href="#">Inicio sesión</a></li>
+    <li><a href="#">¿Quiénes somos?</a></li>
+  </ul>
 
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
+  <!-- Fin Navbar movil -->
 </body>
 
 </html>
