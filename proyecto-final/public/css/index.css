@@ -1,3 +1,7 @@
+body {
+  background-color: #b3ffff;
+}
+
 /* CSS navbar */
 .nav-wrapper {
   background: cornflowerblue;
@@ -15,12 +19,30 @@
   height: 2em;
   margin-left: 1em;
 }
-/* */
+/* Fin CSS navbar */
+
+/* CSS página de quienes somos */
+.h1-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.texto {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.images-wrapper {
+  display: flex;
+
+}
+
+.images-wrapper img {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+/* Fin CSS página de quienes somos */
 
 .page-footer {
   background-color: rgb(134, 221, 167);
-}
-
-body {
-  background-color: #b3ffff;
 }
