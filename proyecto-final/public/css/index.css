@@ -1,3 +1,6 @@
+html {
+  font-size: 0.9375em;
+}
 body {
   background-color: #b3ffff;
 }
@@ -22,7 +25,7 @@ body {
 /* Fin CSS navbar */
 
 /* CSS página de quienes somos */
-.h1-wrapper {
+.header-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -33,13 +36,21 @@ body {
 }
 
 .images-wrapper {
+  margin-top: 0.625em;
   display: flex;
+  justify-content: space-around;
 
 }
 
 .images-wrapper img {
+  height: 15em;
+  width:  15em;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid black;
+}
+
+.separation {
+  margin-top: 1em;
 }
 /* Fin CSS página de quienes somos */
 
