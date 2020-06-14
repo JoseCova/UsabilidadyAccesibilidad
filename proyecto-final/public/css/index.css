@@ -1,14 +1,26 @@
 /* CSS navbar */
-.nav-wrapper{
+.nav-wrapper {
   background: cornflowerblue;
 }
 .nav-wrapper li:hover {
   background: #6666ff;
+}
 
+.nav-wrapper a:hover {
+  background: #6666ff;
 }
 
 .logo {
   width: 3em;
   height: 2em;
   margin-left: 1em;
+}
+/* */
+
+.page-footer {
+  background-color: rgb(134, 221, 167);
+}
+
+body {
+  background-color: #b3ffff;
 }
