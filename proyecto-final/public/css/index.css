@@ -52,6 +52,10 @@ body {
 .separation {
   margin-top: 1em;
 }
+
+.card-wrapper {
+  width: 50%;
+}
 /* Fin CSS página de quienes somos */
 
 .page-footer {
