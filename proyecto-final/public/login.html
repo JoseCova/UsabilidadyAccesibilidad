@@ -31,7 +31,8 @@
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
-    <script src="./js/init.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="./js/login.js" defer></script>
     <!-- Fin scripts firebase-->
 
     <!-- CSS propio-->
@@ -78,19 +79,20 @@
     </nav>
     <!--Fin breadcrumbs-->
 
-    <!-- Formulario Iniciar Sesión-->
+    <!-- Iniciar Sesión-->
     <div class="row center-align">
     <div class="col l6 offset-l3 m4">
       <h1>Iniciar Sesión</h1>
-      <form>
-        <input placeholder="Nombre de usuario" maxlengt="50" minlenght="5"/>
-        <input placeholder="Contraseña" maxlengt="50" minlenght="5"/>
+        <input id="email" type="email" placeholder="Correo electrónico"/>
+        <input id="password" type="password" placeholder="Contraseña"/>
         <br><br><br>
-        <button class="logbutton">Iniciar Sesión</button>
-      </form>
+        <button id="btnLogin" class="logbutton">Iniciar Sesión</button>
+        <button id="btnRegistro" class="logbutton">Registrarse</button>
+        <button id="logout" class="logbutton">Logout</button>
     </div>
     </div>
-    <!-- Fin Formulario Iniciar Sesión-->
+
+    <!-- Fin Iniciar Sesión-->
 
     <!-- Footer -->
     <footer class="page-footer">
