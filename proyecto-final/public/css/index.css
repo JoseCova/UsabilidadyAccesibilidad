@@ -132,6 +132,7 @@ h2 {
 }
 /* Fin CSS página de quienes somos */
 
+/* CSS del footer */
 .highlight > a {
   color: #eee;
 }
@@ -142,6 +143,22 @@ h2 {
 
 .page-footer {
   background: linear-gradient(to right, #90a4ae, #78909c, #607d8b);
+}
+/* CSS del footer */
+
+/* CSS página del formulario */
+.container-form {
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  border: 3px solid silver;
+  border-radius: 1em;
+  padding: 0.625em;
+  box-shadow: 0 0 1.5em lightgray;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 .div-imagen-central {
