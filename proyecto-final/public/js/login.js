@@ -41,14 +41,13 @@
 
   logout.addEventListener("click", e => {
       firebase.auth().signOut();
+      alert("Has salido correctamente de la cuenta");
   });
 
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser) {
-      console.log(firebaseUser);
       logout.classList.remove('hide');
     } else {
-      alert("Has salido correctamente de la cuenta");
       logout.classList.add('hide');
     }    
   });
