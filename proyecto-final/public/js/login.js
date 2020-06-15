@@ -40,8 +40,8 @@
   });
 
   logout.addEventListener("click", e => {
-      firebase.auth().signOut();
-      alert("Has salido correctamente de la cuenta");
+    alert("Has salido correctamente de la cuenta");  
+    firebase.auth().signOut();
   });
 
   firebase.auth().onAuthStateChanged(firebaseUser => {
