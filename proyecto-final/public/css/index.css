@@ -71,14 +71,14 @@ body {
 }
 /* Fin CSS página de quienes somos */
 
-.page-footer {
-  background-color: rgb(134, 221, 167);
-}
-
 .highlight > a {
-  color:#eee;
+  color: #eee;
 }
 
-.highlight > a:hover{
+.highlight > a:hover {
   text-decoration: underline;
+}
+
+.page-footer {
+  background: linear-gradient(to right, #90a4ae, #78909c, #607d8b);
 }
