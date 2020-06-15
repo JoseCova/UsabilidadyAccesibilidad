@@ -105,4 +105,14 @@ body {
 /* CSS página del formulario */
 .container-form {
   margin-top: 1em;
+  margin-bottom: 1.2em;
+  border: 3px solid silver;
+  border-radius: 1em;
+  padding: 0.625em;
+  box-shadow: 0 0 1.5em lightgray;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
