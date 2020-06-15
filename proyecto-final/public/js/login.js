@@ -1,5 +1,4 @@
- //function envio(f){
- 
+
  // Your web app's Firebase configuration
  var firebaseConfig = {
     apiKey: "AIzaSyB_ejoYllafjSBBE3XeQIT9BarCFEijCsQ",
@@ -51,4 +50,3 @@
       logout.classList.add('hide');
     }    
   });
-//}
