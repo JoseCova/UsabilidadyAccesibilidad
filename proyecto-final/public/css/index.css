@@ -37,7 +37,7 @@ body {
   }
 }
 
-@media screen and (min-width: 260px) and (max-width: 365px){
+@media screen and (min-width: 260px) and (max-width: 365px) {
   .h1 {
     font-size: 2.2em;
   }
@@ -100,6 +100,7 @@ body {
 .page-footer {
   background: linear-gradient(to right, #90a4ae, #78909c, #607d8b);
 }
+<<<<<<< HEAD
 /* CSS del footer */
 
 /* CSS página del formulario */
@@ -116,3 +117,18 @@ body {
   display: flex;
   justify-content: center;
 }
+=======
+
+.div-imagen-central {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-central {
+  border-radius: 15px;
+  border: 2px solid #2196f3;
+  width: 600px;
+  height: 400px;
+  margin-bottom: 100px;
+}
+>>>>>>> 6175348a80c058a10a17685262827c1913b55174
