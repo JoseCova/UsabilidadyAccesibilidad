@@ -24,6 +24,50 @@ body {
 }
 /* Fin CSS navbar */
 
+
+/* CSS página favores */
+
+h1 {
+  color: #2196f3;
+}
+
+h2 {
+  color: #2196f3;
+}
+
+.texto1 {
+  color: #2196f3;
+}
+
+.texto2 {
+  color: #2196f3;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  margin-left: 100px;
+}
+
+.imagen1 {
+  width: 500px;
+  height: 400px;
+  border: 2px solid #2196f3;
+  border-radius: 15px;
+}
+
+.imagen2 {
+  width: 500px;
+  height: 400px;
+  margin-left: 100px;
+  border: 2px solid #2196f3;
+  border-radius: 15px;
+}
+
+
+/* Fin CSS página favores */
+
+
 /* CSS página iniciar sesión */
 
 .h1 {
