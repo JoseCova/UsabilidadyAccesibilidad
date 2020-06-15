@@ -69,11 +69,13 @@
   </nav>
   <!--Fin breadcrumbs-->
 
+  <!-- Comprobar que sea responsive -->
+
   <!-- Contenido -->
   <div class="header-wrapper">
-    <h1> ¿Quienes somos? </h1>
+    <h1 tabindex="0"> ¿Quienes somos? </h1>
   </div>
-  <p class="flow-text texto"> Somos el grupo 10 de Usabilidad y Accesibilidad, conformado por
+  <p tabindex="0" class="flow-text texto"> Somos el grupo 10 de Usabilidad y Accesibilidad, conformado por
     José Javier Caraballo Cova, Néstor Torres Díaz y Edgar Figueroa González.
     Nuestro objetivo es ofrecer un entorno donde las personas puedan compartir su tiempo.
     Usando nuestra aplicación, distintas personas podrán colaborar para hacerse favores pagando con
@@ -81,22 +83,33 @@
   </p>
 
   <div class="header-wrapper">
-    <h2> Miembros del grupo </h2>
+    <h2 tabindex="0"> Miembros del grupo </h2>
   </div>
+
   <div class="images-wrapper">
-    <img src="./assets/images/placeholder.png" alt="">
-    <img src="./assets/images/placeholder.png" alt="">
-    <img src="./assets/images/placeholder.png" alt="">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m3 l4">
+          <img src="./assets/images/placeholder.png" alt="">
+        </div>
+        <div class="col s12 m3 l4">
+          <img src="./assets/images/placeholder.png" alt="">
+        </div>
+        <div class="col s12 m3 l4">
+          <img src="./assets/images/placeholder.png" alt="">
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="header-wrapper separation">
-    <h2> Conócenos un poco</h2>
+    <h2 tabindex="0"> Conócenos un poco</h2>
   </div>
 
 
   <!-- Carta Jose-->
   <!-- Modificar lo de las columnas que eso es copiado de tal -->
-  <h3> Jose</h3>
+  <h3 tabindex="0"> José Javier Caraballo Cova </h3>
   <div class="card-wrapper">
     <div class="col s12 m7">
       <div class="card horizontal">
@@ -112,7 +125,7 @@
   <!-- Fin carta Jose-->
 
   <!-- Carta Tote -->
-  <h3> Néstor</h3>
+  <h3 tabindex="0"> Néstor Torres Díaz</h3>
   <!-- Modificar lo de las columnas que eso es copiado de tal -->
   <div class="card-wrapper">
     <div class="col s12 m7">
@@ -130,7 +143,7 @@
   <!-- Fin carta Tote -->
 
   <!-- Carta Edgar -->
-  <h3> Edgar </h3>
+  <h3 tabindex="0"> Edgar Figueroa González </h3>
   <!-- Modificar lo de las columnas que eso es copiado de tal -->
   <div class="card-wrapper">
     <div class="col s12 m7">
@@ -153,6 +166,20 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
+          <h5 class="white-text">Páginas del sitio </h5>
+          <ul class="footer-list">
+            <li class="highlight">
+              <a
+                href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-materialize/src">Github</a>
+            </li>
+            <li class="highlight"><a href="https://www.ull.es/">Inicio</a></li>
+            <li class="highlight"><a href="https://www.w3.org/">Formulario</a></li>
+            <li class="highlight"><a href="https://www.w3.org/">Favores</a></li>
+            <li class="highlight"><a href="https://www.w3.org/">Inicio sesión </a></li>
+            <li class="highlight"><a href="https://www.w3.org/">¿Quienes somos?</a></li>
+          </ul>
+        </div>
+        <div class="col l6 s12">
           <h5 tabindex="0" class="white-text">Muchas gracias por usar nuestra aplicación</h5>
           <p class="grey-text text-lighten-4">
             Contacto: <br />
@@ -163,17 +190,6 @@
             <i tabindex="0" class="material-icons">mail</i> José Javier Caraballo Cova:
             <strong>alu0101023663@ull.edu.es</strong><br />
           </p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li>
-              <a class="grey-text text-lighten-3"
-                href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-materialize/src">Github</a>
-            </li>
-            <li><a class="grey-text text-lighten-3" href="https://www.ull.es/">ULL</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.w3.org/">W3C</a></li>
-          </ul>
         </div>
       </div>
     </div>
