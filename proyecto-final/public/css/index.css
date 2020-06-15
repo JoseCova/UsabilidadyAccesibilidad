@@ -71,6 +71,7 @@ body {
 }
 /* Fin CSS página de quienes somos */
 
+/* CSS del footer */
 .highlight > a {
   color: #eee;
 }
@@ -81,4 +82,10 @@ body {
 
 .page-footer {
   background: linear-gradient(to right, #90a4ae, #78909c, #607d8b);
+}
+/* CSS del footer */
+
+/* CSS página del formulario */
+.container-form {
+  margin-top: 1em;
 }
