@@ -5,9 +5,17 @@ body {
   background-color: #b3ffff;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #2196f3;
+}
+
+.row {
+  margin-bottom: 15px;
 }
 
 /* CSS navbar */
@@ -137,16 +145,16 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
 }
+
 .icon-block {
   background-color: rgb(92, 94, 112);
   border-radius: 1em;
   border: 2px solid grey;
   padding: 0.3125em;
   margin-bottom: 0.625em;
-  
 }
 
-.icon-block  p {
+.icon-block p {
   text-align: justify;
 }
 .imagen-central {
@@ -155,4 +163,45 @@ h1, h2, h3, h4, h5, h6 {
   width: 600px;
   height: 400px;
   margin-bottom: 100px;
+}
+
+.div-imagen-central > img {
+  margin-bottom: 1em;
+}
+
+/* CSS index  media queries */
+
+@media screen and (max-width: 650px) {
+  .div-imagen-central > img {
+    width: 31.25em;
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .div-imagen-central > img {
+    width: 25em;
+    height: 22em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .div-imagen-central > img {
+    width: 18.75em;
+    height: 15.625em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .div-imagen-central > img {
+    width: 16em;
+    height: 13em;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .div-imagen-central > img {
+    width: 12em;
+    height: 9em;
+  }
 }

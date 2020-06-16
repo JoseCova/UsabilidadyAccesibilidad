@@ -1,124 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Inicio | Banco de tiempo grupo 10</title>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos"
-    />
-    <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
-    <meta name="author" content="Néstor Torres Díaz" />
-    <meta name="author" content="Edgar Figueroa González" />
-    <meta name="author" content="José Javier Caraballo Cova" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-    <!-- Falta añadir un favicon -->
 
-    <!-- CSS materialize-->
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!--Import materialize.css-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-      defer
-    ></script>
-    <!-- Fin CSS materialize-->
+<head>
+  <title>Inicio | Banco de tiempo grupo 10</title>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos" />
+  <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
+  <meta name="author" content="Néstor Torres Díaz" />
+  <meta name="author" content="Edgar Figueroa González" />
+  <meta name="author" content="José Javier Caraballo Cova" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+  <!-- Falta añadir un favicon -->
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
-    <script src="./js/init.js" defer></script>
-    <!-- Fin scripts firebase-->
+  <!-- CSS materialize-->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+  <!-- Fin CSS materialize-->
 
-    <!-- CSS propio-->
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+  <script src="./js/init.js" defer></script>
+  <!-- Fin scripts firebase-->
 
-  <body>
-    <!-- Navbar web-->
-    <nav>
-      <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
-          <img class="logo" src="./assets/images/logo.png" alt="logo" />
-        </a>
-        <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
-        <ul id="nav-mobile" role="navigation" class="right hide-on-med-and-down">
-          <li><a href="formulario.html">Formulario </a></li>
-          <li><a href="favores.html">Favores</a></li>
-          <li><a href="login.html">Inicio sesión</a></li>
-          <li><a href="quienSomos.html">¿Quiénes somos?</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!--Fin navbar web-->
+  <!-- CSS propio-->
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
 
-    <!-- Navbar movil -->
-    <ul class="sidenav" id="mobile-demo" aria-label="Inicio">
-      <li><a tabindex="-1" href="formulario.html">Formulario</a></li>
-      <li><a tabindex="-1" href="favores.html">Favores</a></li>
-      <li><a tabindex="-1" href="login.html">Inicio sesión</a></li>
-      <li><a tabindex="-1" href="quienSomos.html">¿Quiénes somos?</a></li>
-    </ul>
-    <!-- Fin Navbar movil -->
-    <!-- Descripción de nuestro banco de tiempo-->
-    <div class="col s12 m12 l12 xl12 description">
-          <!--Parte inicial de la página-->
-          <h1 tabindex="0" class="center blue-text">The TradEnd</h1>
-          <div>
-            <h5 tabindex="0" class="col center blue-text s12 light">
-              Cuida de tus seres queridos siempre, en cualquier momento.
-            </h5>
-          </div>
-          <div class="div-imagen-central"> 
-            <img tabindex="0" class="imagen-central" src="assets/images/caring-for-parent.jpg" alt="caring-for-parent"/>
-          </div>
-        </div>
-        <!--Fin de la parte inicial-->
-
-        <!--Parte explicativa-->
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h5 class="center light-blue-text"><i class="large material-icons">looks_one</i></h5>
-              <h5 tabindex="0" class="center blue-text">Cuidado de personas mayores</h5>
-              <p tabindex="0" class="flow-text light center blue-text">
-                Si tienes a alguna persona que debido a su elevada edad requiera de cuidados mientras estás trabajando, estudiando o realizando cualquier otra actividad de importancia que te impida hacerte cargo de el/ella mientras estás fuera de casa, no tienes que gastarte dinero para contratar a ninguna persona, estás en el lugar adecuado. 
-                
-              </p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h5 class="center light-blue-text"><i class="large material-icons">looks_two</i></h5>
-              <h5 tabindex="0" class="center blue-text">Cuidado de personas enfermas</h5>
-              <p tabindex="0" class="flow-text light center blue-text">
-                Cualquier persona dependiente de una medicación estricta en un determinado horario, que además es incapaz de llevar a cabo ese proceso de automedicación sea por el motivo que sea, es una persona que requiere de alguien al lado que le dé lo que necesite en todo momento y es por eso que queremos ayudarte.
-              </p>
-            </div>
-          </div>
-
-         <div class="col s12 m4">
-            <div class="icon-block">
-              <h5 class="center light-blue-text"><i class="large material-icons">looks_3</i></h5>
-              <h5 tabindex="0" class="center blue-text">Cuidado de niños</h5>
-              <p tabindex="0" class="flow-text light center blue-text">
-                ¿Tienes un dia a dia muy ocupado debido a reuniones de trabajo, viajes de empresa o cualquier otro tipo de negocio/actividad y no puedes pasar el tiempo que te gustaría con tus hijos para supervisarlos y cuidarlos? No te preocupes, aquí estamos nosotros para permitir que cualquier persona de confianza de tu entorno pueda hacerse cargo.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--Fin parte explicativa-->
+<body>
+  <!-- Navbar web-->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
+        <img class="logo" src="./assets/images/logo.png" alt="logo" />
+      </a>
+      <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" role="navigation" class="right hide-on-med-and-down">
+        <li><a href="formulario.html">Formulario </a></li>
+        <li><a href="favores.html">Favores</a></li>
+        <li><a href="login.html">Inicio sesión</a></li>
+        <li><a href="quienSomos.html">¿Quiénes somos?</a></li>
+      </ul>
     </div>
-    <!--Fin descripción-->
+  </nav>
+  <!--Fin navbar web-->
 
-      <!-- Footer -->
+  <!-- Navbar movil -->
+  <ul class="sidenav" id="mobile-demo" aria-label="Inicio">
+    <li><a tabindex="-1" href="formulario.html">Formulario</a></li>
+    <li><a tabindex="-1" href="favores.html">Favores</a></li>
+    <li><a tabindex="-1" href="login.html">Inicio sesión</a></li>
+    <li><a tabindex="-1" href="quienSomos.html">¿Quiénes somos?</a></li>
+  </ul>
+  <!-- Fin Navbar movil -->
+
+  <!-- Descripción de nuestro banco de tiempo-->
+  <div class="row">
+    <div class="col s12 m12 l12 xl12 description">
+      <!--Parte inicial de la página-->
+      <h1 tabindex="0" class="center blue-text">The TradEnd</h1>
+      <div>
+        <h5 tabindex="0" class="col center blue-text s12 light">
+          Cuida de tus seres queridos siempre, en cualquier momento.
+        </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="div-imagen-central">
+          <img tabindex="0" class="imagen-central" src="assets/images/caring-for-parent.jpg" alt="caring-for-parent" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin de la parte inicial-->
+
+  <!--Parte explicativa-->
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h5 class="center light-blue-text"><i class="large material-icons">looks_one</i></h5>
+        <h5 tabindex="0" class="center blue-text">Cuidado de personas mayores</h5>
+        <p tabindex="0" class="flow-text light center blue-text">
+          Si tienes a alguna persona que debido a su elevada edad requiera de cuidados mientras estás trabajando,
+          estudiando o realizando cualquier otra actividad de importancia que te impida hacerte cargo de el/ella
+          mientras estás fuera de casa, no tienes que gastarte dinero para contratar a ninguna persona, estás en el
+          lugar adecuado.
+
+        </p>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h5 class="center light-blue-text"><i class="large material-icons">looks_two</i></h5>
+        <h5 tabindex="0" class="center blue-text">Cuidado de personas enfermas</h5>
+        <p tabindex="0" class="flow-text light center blue-text">
+          Cualquier persona dependiente de una medicación estricta en un determinado horario, que además es incapaz de
+          llevar a cabo ese proceso de automedicación sea por el motivo que sea, es una persona que requiere de alguien
+          al lado que le dé lo que necesite en todo momento y es por eso que queremos ayudarte.
+        </p>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h5 class="center light-blue-text"><i class="large material-icons">looks_3</i></h5>
+        <h5 tabindex="0" class="center blue-text">Cuidado de niños</h5>
+        <p tabindex="0" class="flow-text light center blue-text">
+          ¿Tienes un dia a dia muy ocupado debido a reuniones de trabajo, viajes de empresa o cualquier otro tipo de
+          negocio/actividad y no puedes pasar el tiempo que te gustaría con tus hijos para supervisarlos y cuidarlos? No
+          te preocupes, aquí estamos nosotros para permitir que cualquier persona de confianza de tu entorno pueda
+          hacerse cargo.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Fin parte explicativa-->
+  </div>
+  <!--Fin descripción-->
+
+  <!-- Footer -->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -156,5 +162,6 @@
   </footer>
   <!-- Fin footer -->
 
-  </body>
+</body>
+
 </html>
