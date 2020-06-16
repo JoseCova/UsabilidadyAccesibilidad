@@ -12,6 +12,11 @@
   firebase.initializeApp(firebaseConfig);
   const database = firebase.firestore();
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
   const btnSubmit = document.getElementById("btnSubmit");
 
   btnSubmit.addEventListener("click", () => {
