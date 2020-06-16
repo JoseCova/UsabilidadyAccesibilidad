@@ -34,6 +34,7 @@ h6
   margin-bottom: 15px;
 }
 
+
 /* label color */
 .input-field label {
   color: #0277bd;
@@ -46,6 +47,10 @@ h6
 .input-field input[type=text]:focus {
   border-bottom: 1px solid #0277bd;
   box-shadow: 0 1px 0 0 #0277bd;
+}
+
+nav .breadcrumb {
+  color: #F0F0F0;
 }
 
 /* CSS navbar */
