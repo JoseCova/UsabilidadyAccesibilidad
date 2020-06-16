@@ -27,33 +27,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Fin CSS navbar */
 
 /* CSS página favores */
-.texto1 {
-  color: #2196f3;
-}
-
-.texto2 {
-  color: #2196f3;
-}
-
-.container {
-  display: flex;
-  justify-content: left;
-  margin-left: 100px;
-}
-
 .imagen1 {
-  width: 500px;
-  height: 400px;
+  width: 28em;
+  height: 25em;
   border: 2px solid #2196f3;
-  border-radius: 15px;
-}
-
-.imagen2 {
-  width: 500px;
-  height: 400px;
-  margin-left: 100px;
-  border: 2px solid #2196f3;
-  border-radius: 15px;
+  border-radius: 1em;
 }
 
 /* Fin CSS página favores */
