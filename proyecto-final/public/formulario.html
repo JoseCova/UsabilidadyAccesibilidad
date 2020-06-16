@@ -1,156 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <title>Formulario | Banco de tiempo grupo 10</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos"
+    />
+    <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
+    <meta name="author" content="Néstor Torres Díaz" />
+    <meta name="author" content="Edgar Figueroa González" />
+    <meta name="author" content="José Javier Caraballo Cova" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <!-- Falta añadir un favicon -->
 
-<head>
-  <title>Formulario | Banco de tiempo grupo 10</title>
-  <meta charset="UTF-8" />
-  <meta name="description"
-    content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos" />
-  <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
-  <meta name="author" content="Néstor Torres Díaz" />
-  <meta name="author" content="Edgar Figueroa González" />
-  <meta name="author" content="José Javier Caraballo Cova" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./assets/images/favicon.png">
-  <!-- Falta añadir un favicon -->
+    <!-- CSS materialize-->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      defer
+    ></script>
+    <!-- Fin CSS materialize-->
 
-  <!-- CSS materialize-->
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!--Import materialize.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
-  <!-- Fin CSS materialize-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="./js/init.js" defer></script>
+    <!-- Fin scripts firebase-->
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
-  <script src="./js/init.js" defer></script>
-  <!-- Fin scripts firebase-->
+    <!-- CSS propio-->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-  <!-- CSS propio-->
-  <link rel="stylesheet" href="./css/index.css" />
-</head>
-
-<body>
-  <!-- Navbar web-->
-  <nav>
-    <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
-        <img class="logo" src="./assets/images/logo.png" alt="logo" />
-      </a>
-      <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" role="navigation" class="right hide-on-med-and-down">
-        <li class="active"><a href="formulario.html">Formulario </a></li>
-        <li><a href="favores.html">Favores</a></li>
-        <li><a href="login.html">Inicio sesión</a></li>
-        <li><a href="quienSomos.html">¿Quiénes somos?</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!--Fin navbar web-->
-
-  <!-- Navbar movil -->
-  <ul class="sidenav" id="mobile-demo" aria-label="Inicio">
-    <li class="active"><a tabindex="-1" href="formulario.html">Formulario</a></li>
-    <li><a tabindex="-1" href="favores.html">Favores</a></li>
-    <li><a tabindex="-1" href="login.html">Inicio sesión</a></li>
-    <li><a tabindex="-1" href="quienSomos.html">¿Quiénes somos?</a></li>
-  </ul>
-  <!-- Fin Navbar movil -->
-
-  <!-- Breadcrumbs -->
-  <nav aria-label="”breadcrumbs”">
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a href="index.html" class="breadcrumb">Inicio</a>
-        <a href="formulario.html" class="breadcrumb" aria-current="location">Formulario</a>
+  <body>
+    <!-- Navbar web-->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
+          <img class="logo" src="./assets/images/logo.png" alt="logo" />
+        </a>
+        <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul id="nav-mobile" role="navigation" class="right hide-on-med-and-down">
+          <li class="active"><a href="formulario.html">Formulario </a></li>
+          <li><a href="favores.html">Favores</a></li>
+          <li><a href="login.html">Inicio sesión</a></li>
+          <li><a href="quienSomos.html">¿Quiénes somos?</a></li>
+        </ul>
       </div>
-    </div>
-  </nav>
-  <!--Fin breadcrumbs-->
+    </nav>
+    <!--Fin navbar web-->
 
+    <!-- Navbar movil -->
+    <ul class="sidenav" id="mobile-demo" aria-label="Inicio">
+      <li class="active"><a tabindex="-1" href="formulario.html">Formulario</a></li>
+      <li><a tabindex="-1" href="favores.html">Favores</a></li>
+      <li><a tabindex="-1" href="login.html">Inicio sesión</a></li>
+      <li><a tabindex="-1" href="quienSomos.html">¿Quiénes somos?</a></li>
+    </ul>
+    <!-- Fin Navbar movil -->
 
-  <!-- introducir el correo, indique el favor, indique el tiempo que puede realizar el favor, indique -->
+    <!-- Breadcrumbs -->
+    <nav aria-label="”breadcrumbs”">
+      <div class="nav-wrapper center">
+        <div class="col s12">
+          <a href="index.html" class="breadcrumb">Inicio</a>
+          <a href="formulario.html" class="breadcrumb" aria-current="location">Formulario</a>
+        </div>
+      </div>
+    </nav>
+    <!--Fin breadcrumbs-->
 
-  <!-- Formulario -->
-  <div class="container container-form">
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6 m6 l6">
-            <input id="nombre" type="text" class="validate">
-            <label for="nombre">Nombre</label>
-          </div>
-          <div class="input-field col s6 m6 l6">
-            <input id="apellidos" type="text" class="validate">
-            <label for="apellidos">Apellidos</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="correo" type="email" class="validate">
-            <label for="correo">Correo electrónico</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="zona-texto" class="materialize-textarea"></textarea>
-            <label for="zona-texto">Porfavor indique el favor que desea realizar </label>
-          </div>
-        </div>
-        <div class="row">
-          <label for="rango"> Indique el número de horas que podrá estar disponible </label>
-          <p class="range-field">
-            <input type="range" id="rango" min="1" max="24" />
-          </p>
-        </div>
-        <div class="center">
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- Fin formulario-->
+    <!-- introducir el correo, indique el favor, indique el tiempo que puede realizar el favor, indique -->
 
-  <!-- Footer -->
-  <footer class="page-footer">
-    <div class="container">
+    <!-- Formulario -->
+    <div class="container container-form">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Páginas del sitio </h5>
-          <ul class="footer-list">
-            <li class="highlight">
-              <a
-                href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-materialize/src">Github</a>
-            </li>
-            <li class="highlight"><a href="#">Inicio</a></li>
-            <li class="highlight"><a href="#">Formulario</a></li>
-            <li class="highlight"><a href="#">Favores</a></li>
-            <li class="highlight"><a href="#">Inicio sesión </a></li>
-            <li class="highlight"><a href="#">¿Quienes somos?</a></li>
-          </ul>
-        </div>
-        <div class="col l6 s12">
-          <h5 tabindex="0" class="white-text">Muchas gracias por usar nuestra aplicación</h5>
-          <p class="grey-text text-lighten-4">
-            Contacto: <br />
-            <i tabindex="0" class="material-icons">mail</i> Néstor Torres Díaz:
-            <strong>alu0101021768@ull.edu.es</strong> <br />
-            <i tabindex="0" class="material-icons">mail</i> Edgar Figueroa González:
-            <strong>alu0101043838@ull.edu.es</strong> <br />
-            <i tabindex="0" class="material-icons">mail</i> José Javier Caraballo Cova:
-            <strong>alu0101023663@ull.edu.es</strong><br />
-          </p>
-        </div>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6 m6 l6">
+              <input id="nombre" type="text" class="validate" />
+              <label for="nombre">Nombre</label>
+            </div>
+            <div class="input-field col s6 m6 l6">
+              <input id="apellidos" type="text" class="validate" />
+              <label for="apellidos">Apellidos</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="correo" type="email" class="validate" />
+              <label for="correo">Correo electrónico</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="zona-texto" class="materialize-textarea"></textarea>
+              <label for="zona-texto">Porfavor indique el favor que desea realizar </label>
+            </div>
+          </div>
+          <div class="row">
+            <label for="rango"> Indique el número de horas que podrá estar disponible </label>
+            <p class="range-field">
+              <input type="range" id="rango" min="1" max="24" />
+            </p>
+          </div>
+          <div class="center">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+              Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="footer-copyright">
-      Usabilidad y Accesibilidad Grupo 10
-    </div>
-  </footer>
-  <!-- Fin footer -->
-</body>
+    <!-- Fin formulario-->
 
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Páginas del sitio</h5>
+            <ul class="footer-list">
+              <li class="highlight">
+                <a
+                  href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-materialize/src"
+                  >Github</a
+                >
+              </li>
+              <li class="highlight"><a href="#">Inicio</a></li>
+              <li class="highlight"><a href="#">Formulario</a></li>
+              <li class="highlight"><a href="#">Favores</a></li>
+              <li class="highlight"><a href="#">Inicio sesión </a></li>
+              <li class="highlight"><a href="#">¿Quienes somos?</a></li>
+            </ul>
+          </div>
+          <div class="col l6 s12">
+            <h5 tabindex="0" class="white-text">Muchas gracias por usar nuestra aplicación</h5>
+            <p class="grey-text text-lighten-4">
+              Contacto: <br />
+              <i tabindex="0" class="material-icons">mail</i> Néstor Torres Díaz:
+              <strong>alu0101021768@ull.edu.es</strong> <br />
+              <i tabindex="0" class="material-icons">mail</i> Edgar Figueroa González:
+              <strong>alu0101043838@ull.edu.es</strong> <br />
+              <i tabindex="0" class="material-icons">mail</i> José Javier Caraballo Cova:
+              <strong>alu0101023663@ull.edu.es</strong><br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        Usabilidad y Accesibilidad Grupo 10
+      </div>
+    </footer>
+    <!-- Fin footer -->
+  </body>
 </html>

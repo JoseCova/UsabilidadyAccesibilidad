@@ -1,203 +1,212 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <title>¿Quiénes somos? | Banco de tiempo grupo 10</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos"
+    />
+    <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
+    <meta name="author" content="Néstor Torres Díaz" />
+    <meta name="author" content="Edgar Figueroa González" />
+    <meta name="author" content="José Javier Caraballo Cova" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <!-- Falta añadir un favicon -->
 
-<head>
-  <title>¿Quiénes somos? | Banco de tiempo grupo 10</title>
-  <meta charset="UTF-8" />
-  <meta name="description"
-    content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos" />
-  <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
-  <meta name="author" content="Néstor Torres Díaz" />
-  <meta name="author" content="Edgar Figueroa González" />
-  <meta name="author" content="José Javier Caraballo Cova" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./assets/images/favicon.png">
-  <!-- Falta añadir un favicon -->
+    <!-- CSS materialize-->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      defer
+    ></script>
+    <!-- Fin CSS materialize-->
 
-  <!-- CSS materialize-->
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!--Import materialize.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
-  <!-- Fin CSS materialize-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="./js/init.js" defer></script>
+    <!-- Fin scripts firebase-->
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
-  <script src="./js/init.js" defer></script>
-  <!-- Fin scripts firebase-->
+    <!-- CSS propio-->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-  <!-- CSS propio-->
-  <link rel="stylesheet" href="./css/index.css" />
-</head>
-
-<body>
-  <!-- Navbar web-->
-  <nav>
-    <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
-        <img class="logo" src="./assets/images/logo.png" alt="logo" />
-      </a>
-      <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" role="navigation" class="right hide-on-med-and-down">
-        <li><a href="formulario.html">Formulario </a></li>
-        <li><a href="favores.html">Favores</a></li>
-        <li><a href="login.html">Inicio sesión</a></li>
-        <li class="active"><a href="quienSomos.html">¿Quiénes somos?</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!--Fin navbar web-->
-
-  <!-- Navbar movil -->
-  <ul class="sidenav" id="mobile-demo" aria-label="Inicio">
-    <li><a tabindex="-1" href="formulario.html">Formulario</a></li>
-    <li><a tabindex="-1" href="favores.html">Favores</a></li>
-    <li><a tabindex="-1" href="login.html">Inicio sesión</a></li>
-    <li class="active"><a tabindex="-1" href="quienSomos.html">¿Quiénes somos?</a></li>
-  </ul>
-  <!-- Fin Navbar movil -->
-
-  <!-- Breadcrumbs -->
-  <nav aria-label="”breadcrumbs”">
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a href="index.html" class="breadcrumb">Inicio</a>
-        <a href="quienSomos.html" class="breadcrumb" aria-current="location">¿Quiénes somos?</a>
+  <body>
+    <!-- Navbar web-->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
+          <img class="logo" src="./assets/images/logo.png" alt="logo" />
+        </a>
+        <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul id="nav-mobile" role="navigation" class="right hide-on-med-and-down">
+          <li><a href="formulario.html">Formulario </a></li>
+          <li><a href="favores.html">Favores</a></li>
+          <li><a href="login.html">Inicio sesión</a></li>
+          <li class="active"><a href="quienSomos.html">¿Quiénes somos?</a></li>
+        </ul>
       </div>
-    </div>
-  </nav>
-  <!--Fin breadcrumbs-->
+    </nav>
+    <!--Fin navbar web-->
 
-  <!-- Comprobar que sea responsive -->
+    <!-- Navbar movil -->
+    <ul class="sidenav" id="mobile-demo" aria-label="Inicio">
+      <li><a tabindex="-1" href="formulario.html">Formulario</a></li>
+      <li><a tabindex="-1" href="favores.html">Favores</a></li>
+      <li><a tabindex="-1" href="login.html">Inicio sesión</a></li>
+      <li class="active"><a tabindex="-1" href="quienSomos.html">¿Quiénes somos?</a></li>
+    </ul>
+    <!-- Fin Navbar movil -->
 
-  <!-- Contenido -->
-  <div class="header-wrapper">
-    <h1 tabindex="0"> ¿Quienes somos? </h1>
-  </div>
-  <p tabindex="0" class="flow-text texto"> Somos el grupo 10 de Usabilidad y Accesibilidad, conformado por
-    José Javier Caraballo Cova, Néstor Torres Díaz y Edgar Figueroa González.
-    Nuestro objetivo es ofrecer un entorno donde las personas puedan compartir su tiempo.
-    Usando nuestra aplicación, distintas personas podrán colaborar para hacerse favores pagando con
-    su tiempo. Lorem ipsum Dolor sit amet.
-  </p>
-
-  <div class="header-wrapper">
-    <h2 tabindex="0"> Miembros del grupo </h2>
-  </div>
-
-  <div class="images-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m3 l4">
-          <img src="./assets/images/placeholder.png" alt="">
-        </div>
-        <div class="col s12 m3 l4">
-          <img src="./assets/images/placeholder.png" alt="">
-        </div>
-        <div class="col s12 m3 l4">
-          <img src="./assets/images/placeholder.png" alt="">
+    <!-- Breadcrumbs -->
+    <nav aria-label="”breadcrumbs”">
+      <div class="nav-wrapper center">
+        <div class="col s12">
+          <a href="index.html" class="breadcrumb">Inicio</a>
+          <a href="quienSomos.html" class="breadcrumb" aria-current="location">¿Quiénes somos?</a>
         </div>
       </div>
+    </nav>
+    <!--Fin breadcrumbs-->
+
+    <!-- Comprobar que sea responsive -->
+
+    <!-- Contenido -->
+    <div class="header-wrapper">
+      <h1 tabindex="0">¿Quienes somos?</h1>
     </div>
-  </div>
+    <p tabindex="0" class="flow-text texto blue-text">
+      Somos el grupo 10 de Usabilidad y Accesibilidad, conformado por José Javier Caraballo Cova,
+      Néstor Torres Díaz y Edgar Figueroa González. Nuestro objetivo es ofrecer un entorno donde las
+      personas puedan compartir su tiempo. Usando nuestra aplicación, distintas personas podrán
+      colaborar para hacerse favores pagando con su tiempo. Lorem ipsum Dolor sit amet.
+    </p>
 
-  <div class="header-wrapper separation">
-    <h2 tabindex="0"> Conócenos un poco</h2>
-  </div>
+    <div class="header-wrapper">
+      <h2 tabindex="0">Miembros del grupo</h2>
+    </div>
 
-
-  <!-- Carta Jose-->
-  <!-- Modificar lo de las columnas que eso es copiado de tal -->
-  <h3 tabindex="0"> José Javier Caraballo Cova </h3>
-  <div class="card-wrapper">
-    <div class="col s12 m7">
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="https://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-content">
-          <p> Aqui algo de cada uno de nosotros.</p>
+    <div class="images-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m3 l4">
+            <img src="./assets/images/placeholder.png" alt="" />
+          </div>
+          <div class="col s12 m3 l4">
+            <img src="./assets/images/placeholder.png" alt="" />
+          </div>
+          <div class="col s12 m3 l4">
+            <img src="./assets/images/placeholder.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Fin carta Jose-->
 
-  <!-- Carta Tote -->
-  <h3 tabindex="0"> Néstor Torres Díaz</h3>
-  <!-- Modificar lo de las columnas que eso es copiado de tal -->
-  <div class="card-wrapper">
-    <div class="col s12 m7">
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="https://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-content">
-          <p>Aqui algo de cada uno de nosotros.</p>
+    <div class="header-wrapper separation">
+      <h2 tabindex="0">Conócenos un poco</h2>
+    </div>
+
+    <!-- Carta Jose-->
+    <!-- Modificar lo de las columnas que eso es copiado de tal -->
+    <h3 tabindex="0">José Javier Caraballo Cova</h3>
+    <div class="card-wrapper">
+      <div class="col s12 m7">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="https://lorempixel.com/100/190/nature/6" />
+          </div>
+          <div class="card-content">
+            <p>Aqui algo de cada uno de nosotros.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <!-- Fin carta Jose-->
 
-  <!-- Fin carta Tote -->
-
-  <!-- Carta Edgar -->
-  <h3 tabindex="0"> Edgar Figueroa González </h3>
-  <!-- Modificar lo de las columnas que eso es copiado de tal -->
-  <div class="card-wrapper">
-    <div class="col s12 m7">
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="https://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-content">
-          <p>Aqui algo de cada uno de nosotros. tambien poner enlaces a redes como github</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Fin carta Edgar -->
-  <!-- Aquí unas cartas -->
-  <!-- Fin contenido-->
-
-  <!-- Footer -->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Páginas del sitio </h5>
-          <ul class="footer-list">
-            <li class="highlight">
-              <a
-                href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-materialize/src">Github</a>
-            </li>
-            <li class="highlight"><a href="#">Inicio</a></li>
-            <li class="highlight"><a href="#">Formulario</a></li>
-            <li class="highlight"><a href="#">Favores</a></li>
-            <li class="highlight"><a href="#">Inicio sesión </a></li>
-            <li class="highlight"><a href="#">¿Quienes somos?</a></li>
-          </ul>
-        </div>
-        <div class="col l6 s12">
-          <h5 tabindex="0" class="white-text">Muchas gracias por usar nuestra aplicación</h5>
-          <p class="grey-text text-lighten-4">
-            Contacto: <br />
-            <i tabindex="0" class="material-icons">mail</i> Néstor Torres Díaz:
-            <strong>alu0101021768@ull.edu.es</strong> <br />
-            <i tabindex="0" class="material-icons">mail</i> Edgar Figueroa González:
-            <strong>alu0101043838@ull.edu.es</strong> <br />
-            <i tabindex="0" class="material-icons">mail</i> José Javier Caraballo Cova:
-            <strong>alu0101023663@ull.edu.es</strong><br />
-          </p>
+    <!-- Carta Tote -->
+    <h3 tabindex="0">Néstor Torres Díaz</h3>
+    <!-- Modificar lo de las columnas que eso es copiado de tal -->
+    <div class="card-wrapper">
+      <div class="col s12 m7">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="https://lorempixel.com/100/190/nature/6" />
+          </div>
+          <div class="card-content">
+            <p>Aqui algo de cada uno de nosotros.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      Usabilidad y Accesibilidad Grupo 10
-    </div>
-  </footer>
-  <!-- Fin footer -->
-</body>
 
+    <!-- Fin carta Tote -->
+
+    <!-- Carta Edgar -->
+    <h3 tabindex="0">Edgar Figueroa González</h3>
+    <!-- Modificar lo de las columnas que eso es copiado de tal -->
+    <div class="card-wrapper">
+      <div class="col s12 m7">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="https://lorempixel.com/100/190/nature/6" />
+          </div>
+          <div class="card-content">
+            <p>Aqui algo de cada uno de nosotros. tambien poner enlaces a redes como github</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin carta Edgar -->
+    <!-- Aquí unas cartas -->
+    <!-- Fin contenido-->
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Páginas del sitio</h5>
+            <ul class="footer-list">
+              <li class="highlight">
+                <a
+                  href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/practica-materialize/src"
+                  >Github</a
+                >
+              </li>
+              <li class="highlight"><a href="#">Inicio</a></li>
+              <li class="highlight"><a href="#">Formulario</a></li>
+              <li class="highlight"><a href="#">Favores</a></li>
+              <li class="highlight"><a href="#">Inicio sesión </a></li>
+              <li class="highlight"><a href="#">¿Quienes somos?</a></li>
+            </ul>
+          </div>
+          <div class="col l6 s12">
+            <h5 tabindex="0" class="white-text">Muchas gracias por usar nuestra aplicación</h5>
+            <p class="grey-text text-lighten-4">
+              Contacto: <br />
+              <i tabindex="0" class="material-icons">mail</i> Néstor Torres Díaz:
+              <strong>alu0101021768@ull.edu.es</strong> <br />
+              <i tabindex="0" class="material-icons">mail</i> Edgar Figueroa González:
+              <strong>alu0101043838@ull.edu.es</strong> <br />
+              <i tabindex="0" class="material-icons">mail</i> José Javier Caraballo Cova:
+              <strong>alu0101023663@ull.edu.es</strong><br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        Usabilidad y Accesibilidad Grupo 10
+      </div>
+    </footer>
+    <!-- Fin footer -->
+  </body>
 </html>
