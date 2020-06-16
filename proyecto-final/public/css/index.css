@@ -5,11 +5,6 @@ body {
   background-color: #b3ffff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #2196f3;
-}
-
-
 /* CSS navbar */
 .nav-wrapper {
   background: cornflowerblue;
@@ -30,6 +25,19 @@ h1, h2, h3, h4, h5, h6 {
 /* Fin CSS navbar */
 
 /* CSS página favores */
+
+h1 {
+  color: #2196f3;
+}
+
+h2 {
+  color: #2196f3;
+}
+
+h3 {
+  color: #2196f3;
+}
+
 
 .texto1 {
   color: #2196f3;
@@ -163,13 +171,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .icon-block {
   background-color: rgb(92, 94, 112);
-  border-radius: 1em;
-  border: 2px solid grey;
-  padding: 0.3125em;
-}
-
-.icon-block  p {
-  text-align: justify;
 }
 .imagen-central {
   border-radius: 1em;
