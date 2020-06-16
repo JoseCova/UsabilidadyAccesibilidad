@@ -5,10 +5,10 @@ body {
   background-color: #b3ffff;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   color: #2196f3;
 }
-
 
 /* CSS navbar */
 .nav-wrapper {
@@ -18,9 +18,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #6666ff;
 }
 
-.nav-wrapper a:hover {
-  background: #6666ff;
-}
 
 .logo {
   width: 3em;
@@ -30,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Fin CSS navbar */
 
 /* CSS página favores */
-
 .texto1 {
   color: #2196f3;
 }
@@ -90,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 250px;
   height: 50px;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* Fin CSS página iniciar sesión */
