@@ -64,15 +64,13 @@ h2 {
   border-radius: 15px;
 }
 
-
 /* Fin CSS página favores */
-
 
 /* CSS página iniciar sesión */
 
 .h1 {
   font-size: 3.5em;
-  color: black;
+  color: #2196f3;
 }
 
 @media screen and (max-width: 258px) {
@@ -90,7 +88,8 @@ h2 {
 .logbutton {
   background-color: cornflowerblue;
   color: white;
-  border: solid black;
+  border: solid #2196f3;
+  border-radius: 15px;
   cursor: pointer;
   width: 250px;
   height: 50px;
