@@ -10,7 +10,7 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  const firestoreInstance = firebase.firestore();
+  const database = firebase.firestore();
 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -26,32 +26,12 @@
     console.log(txtname);
     console.log(txtfavor);
     console.log(number_hours);
-
-    firestoreInstance.collection("users").add(
-        {
-          "name" : "john",
-          "age" : 50,
-          "email" : "example@example.com",
-          "address" : {
-            "street" : "street 24",
-            "city" : "new york"
-          }
-        }).then(function() {
-         alert("Document successfully written!");
-        })
-    });
-//     database.collection("datos").add({
-//         "name": txtname,
-//         "favor": txtfavor,
-//         "hours": number_hours
-//     })
-//     .then(function() {
-//         console.log("Document successfully written!");
-//     })
-//     .catch(function(error) {
-//         console.log.error("Error writing document: ", error);
-//     });
-//   });
+  
+    database.collection("datos").add({
+      txtname: txtname,
+      txtfavor: txtfavor,
+      number_hours: number_hours
+    })
     // .then((docRef) => {
     //     document.querySelector("#nombre").value = "";
     //     document.querySelector("#zona-texto").value = "";
@@ -76,16 +56,17 @@
     //         classes: "rounded blue-grey darken-2",
     //         displayLength: 50000
     //     })
-    // })
+    // })  
+  });
 
-//   // Escritura de los elementos del documento
-// document.addEventListener("DOMContentLoaded", event => {
-//     database.collection("datos").get().then(function(querySnapshot) {
-//         querySnapshot.forEach(function(doc) {
-//             console.log(doc.id, " => ", doc.data());
-//         });
-//     });
+  // Escritura de los elementos del documento
+document.addEventListener("DOMContentLoaded", event => {
+    database.collection("datos").get().then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            console.log(doc.id, " => ", doc.data());
+        });
+    });
     
-// });
+});
 
  
