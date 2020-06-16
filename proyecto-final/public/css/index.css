@@ -11,11 +11,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6
+ {
   color: #0277bd;
   margin: 0.2em;
 }
 
+.gris {
+  color: #eeeeee;
+}
 .row {
   margin-bottom: 15px;
 }
@@ -40,7 +44,7 @@ h6 {
 .imagen1 {
   width: 28em;
   height: 25em;
-  border: 2px solid #2196f3;
+  border: 2px solid #0277bd;
   border-radius: 1em;
 }
 
@@ -53,7 +57,6 @@ h6 {
 
 .h1 {
   font-size: 3.5em;
-  color: #2196f3;
 }
 
 @media screen and (max-width: 258px) {
@@ -179,19 +182,20 @@ h6 {
 }
 
 .icon-block {
-  background-color: rgb(92, 94, 112);
+  background-color: #0277bd;
   border-radius: 1em;
   border: 2px solid grey;
   padding: 0.3125em;
   margin-bottom: 0.625em;
 }
 
+
 .icon-block p {
   text-align: justify;
 }
 .imagen-central {
   border-radius: 1em;
-  border: 2px solid #2196f3;
+  border: 2px solid #0277bd;
   width: 600px;
   height: 400px;
   margin-bottom: 100px;
