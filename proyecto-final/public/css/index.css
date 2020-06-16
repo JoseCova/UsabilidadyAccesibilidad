@@ -20,8 +20,32 @@ h6
 .gris {
   color: #eeeeee;
 }
+
+.azul {
+  color: #0277bd;
+
+}
+
+.btn {
+  background: #0277bd;
+}
+
 .row {
   margin-bottom: 15px;
+}
+
+/* label color */
+.input-field label {
+  color: #0277bd;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #0277bd;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #0277bd;
+  box-shadow: 0 1px 0 0 #0277bd;
 }
 
 /* CSS navbar */
@@ -72,9 +96,9 @@ h6
 }
 
 .logbutton {
-  background-color: cornflowerblue;
+  background: #0277bd;
   color: white;
-  border: solid #2196f3;
+  border: 2px solid  grey;
   border-radius: 15px;
   cursor: pointer;
   width: 250px;
