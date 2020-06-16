@@ -11,6 +11,10 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
   
   const txtemail = document.getElementById("email");
   const txtcontraseña = document.getElementById("password");
