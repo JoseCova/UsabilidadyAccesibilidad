@@ -1,5 +1,6 @@
 html {
   font-size: 0.9375em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
   background-color: #b3ffff;
@@ -11,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2196f3;
+  color: #0277bd;
   margin: 0.2em;
 }
 
@@ -24,7 +25,7 @@ h6 {
   background: cornflowerblue;
 }
 .nav-wrapper li:hover {
-  background: #6666ff;
+  background: #0277bd;
 }
 
 .logo {
