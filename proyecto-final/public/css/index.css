@@ -149,7 +149,7 @@ h6
 
 /* CSS del footer */
 .highlight > a {
-  color: #eee;
+  color:  #0277bd;
 }
 
 .highlight > a:hover {
@@ -157,7 +157,12 @@ h6
 }
 
 .page-footer {
-  background: linear-gradient(to right, #90a4ae, #78909c, #607d8b);
+  background: #c4c4c4;
+  color: #0277bd;
+}
+
+.footer-copyright {
+  color: #0277bd;
 }
 /* CSS del footer */
 
