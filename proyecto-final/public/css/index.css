@@ -265,6 +265,11 @@ nav .breadcrumb {
   justify-content: center;
 }
 
+input[type="range"]::-moz-range-track {
+  background-color:#0277bd;
+}
+
+
 .div-imagen-central {
   display: flex;
   justify-content: center;
