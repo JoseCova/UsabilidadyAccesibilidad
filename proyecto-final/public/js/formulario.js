@@ -10,32 +10,48 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const database = firebase.firestore();
+const database = firebase.database();
+// Base de datos de los usuarios
+usuariosBdT = database.ref(`usuariosBdT`);
+const correosExistentes = [];
 
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".sidenav");
-  var instances = M.Sidenav.init(elems);
+usuariosBdT.on("value", (snapshot) => {
+    const usuarios = snapshot.val();
+    for (const i in usuarios) {
+        correosExistentes.push(usuarios[i].correo);
+    }
 });
 
 const btnSubmit = document.getElementById("btnSubmit");
 
 btnSubmit.addEventListener("click", () => {
   const txtname = document.querySelector("#nombre").value;
+  const txtapellido = document.querySelector("#apellidos").value;
+  const txtcorreo = document.querySelector("#correo").value;
   const txtfavor = document.querySelector("#zona-texto").value;
-  const number_hours = document.querySelector("#rango").value;
+  const number_hours = document.querySelector("#horas").value;
   console.log(txtname);
   console.log(txtfavor);
   console.log(number_hours);
 
-  database.collection("datos").add({
-    txtname: txtname,
-    txtfavor: txtfavor,
-    number_hours: number_hours,
-  });
-  // .then((docRef) => {
+  if (txtname === "" || txtapellido === "" || txtcorreo === "" || txtfavor === "") {
+    alert("No puede dejar campos vacíos");
+  }
+  else{
+    alert("Se ha registrado correctamente");
+  }
+  usuariosBdT.push().set({
+    name: txtname,
+    favor: txtfavor,
+    hours: number_hours,
+   })
+
+  //  .then((docRef) => {
+  //    console.log("añadido con", docRef.id);
   //     document.querySelector("#nombre").value = "";
   //     document.querySelector("#zona-texto").value = "";
-  //     document.querySelector("#rango").value = "";
+  //     document.querySelector("#horas").value = "";
+
   //     const contactModal = document.querySelector("#modalContact");
   //     const instance = M.Modal.getInstance(contactModal);
   //     instance.close()
@@ -45,9 +61,10 @@ btnSubmit.addEventListener("click", () => {
   //         displayLength: 50000
   //     })
   // }).catch((docRef) => {
+  //   console.log("Error", error);
   //     document.querySelector("#nombre").value = "";
   //     document.querySelector("#zona-texto").value = "";
-  //     document.querySelector("#rango").value = "";
+  //     document.querySelector("#horas").value = "";
   //     const contactModal = document.querySelector("#modalContact");
   //     const instance = M.Modal.getInstance(contactModal);
   //     instance.close()
@@ -59,14 +76,12 @@ btnSubmit.addEventListener("click", () => {
   // })
 });
 
-// Escritura de los elementos del documento
-document.addEventListener("DOMContentLoaded", (event) => {
-  database
-    .collection("datos")
-    .get()
-    .then(function (querySnapshot) {
-      querySnapshot.forEach(function (doc) {
-        console.log(doc.id, " => ", doc.data());
-      });
-    });
-});
+
+// // Escritura de los elementos del documento
+// document.addEventListener("DOMContentLoaded", (event) => {
+//   database.collection("datos").get().then(function (querySnapshot) {
+//       querySnapshot.forEach(function (doc) {
+//         console.log(doc.id, " => ", doc.data());
+//       });
+//     });
+// });
