@@ -38,10 +38,10 @@ h6 {
 }
 /* label focus color */
 .input-field input[type="text"]:focus + label {
-  color: #0277bd;
+  color: #0277bd !important;
 }
 /* label underline focus color */
-.input-field input[type="text"]:focus {
+.input-field > input[type="text"]:focus {
   border-bottom: 1px solid #0277bd !important;
   box-shadow: 0 1px 0 0 #0277bd !important;
 }
@@ -263,6 +263,10 @@ nav .breadcrumb {
 .center {
   display: flex;
   justify-content: center;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color:#0277bd;
 }
 
 .div-imagen-central {
