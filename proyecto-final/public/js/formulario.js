@@ -12,7 +12,8 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const database = firebase.firestore();
 
-const btnSubmit = document.getElementById("btnSubmit");
+
+const btnSubmit = document.querySelector("#btnSubmit");
 
 btnSubmit.addEventListener("click", () => {
   const txtname = document.querySelector("#nombre").value;
@@ -20,21 +21,22 @@ btnSubmit.addEventListener("click", () => {
   const txtcorreo = document.querySelector("#correo").value;
   const txtfavor = document.querySelector("#zona-texto").value;
   const number_hours = document.querySelector("#horas").value;
-  console.log(txtname);
-  console.log(txtfavor);
-  console.log(number_hours);
 
-  if (txtname === "" || txtapellido === "" || txtcorreo === "" || txtfavor === "") {
-    alert("No puede dejar campos vacíos");
-  }
-  else{
-    alert("Se ha registrado correctamente");
-  }
+  // console.log(txtname);
+  // console.log(txtfavor);
+  // console.log(number_hours);
+  
+  alert("Se ha registrado correctamente");
   database.collection("datos").add({
     name: txtname,
+    apellido: txtapellido,
     favor: txtfavor,
-    hours: number_hours,
-   })
+    hours: number_hours
+  }).then(function(docRef) {
+    console.log("Document written with ID: ", docRef.id);
+  }).catch(function(error) {
+    console.error("Error adding document: ", error);
+  }); 
 });
 
 // Escritura de los elementos del documento
@@ -45,33 +47,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
     });
 });
-
-
-// .then((docRef) => {
-//   console.log("añadido con", docRef.id);
-//    document.querySelector("#nombre").value = "";
-//    document.querySelector("#zona-texto").value = "";
-//    document.querySelector("#horas").value = "";
-
-//    const contactModal = document.querySelector("#modalContact");
-//    const instance = M.Modal.getInstance(contactModal);
-//    instance.close()
-//    M.toast({
-//        html: `Contacto añadido con éxito`,
-//        classes: "rounded blue-grey darken-2",
-//        displayLength: 50000
-//    })
-// }).catch((docRef) => {
-//  console.log("Error", error);
-//    document.querySelector("#nombre").value = "";
-//    document.querySelector("#zona-texto").value = "";
-//    document.querySelector("#horas").value = "";
-//    const contactModal = document.querySelector("#modalContact");
-//    const instance = M.Modal.getInstance(contactModal);
-//    instance.close()
-//    M.toast({
-//        html: `Contacto añadido con éxito`,
-//        classes: "rounded blue-grey darken-2",
-//        displayLength: 50000
-//    })
-// })
