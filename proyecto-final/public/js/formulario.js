@@ -10,17 +10,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
-// Base de datos de los usuarios
-usuariosBdT = database.ref(`usuariosBdT`);
-const correosExistentes = [];
-
-usuariosBdT.on("value", (snapshot) => {
-    const usuarios = snapshot.val();
-    for (const i in usuarios) {
-        correosExistentes.push(usuarios[i].correo);
-    }
-});
+const database = firebase.firestore();
 
 const btnSubmit = document.getElementById("btnSubmit");
 
@@ -40,48 +30,48 @@ btnSubmit.addEventListener("click", () => {
   else{
     alert("Se ha registrado correctamente");
   }
-  usuariosBdT.push().set({
+  database.collection("datos").add({
     name: txtname,
     favor: txtfavor,
     hours: number_hours,
    })
+});
 
-  //  .then((docRef) => {
-  //    console.log("añadido con", docRef.id);
-  //     document.querySelector("#nombre").value = "";
-  //     document.querySelector("#zona-texto").value = "";
-  //     document.querySelector("#horas").value = "";
-
-  //     const contactModal = document.querySelector("#modalContact");
-  //     const instance = M.Modal.getInstance(contactModal);
-  //     instance.close()
-  //     M.toast({
-  //         html: `Contacto añadido con éxito`,
-  //         classes: "rounded blue-grey darken-2",
-  //         displayLength: 50000
-  //     })
-  // }).catch((docRef) => {
-  //   console.log("Error", error);
-  //     document.querySelector("#nombre").value = "";
-  //     document.querySelector("#zona-texto").value = "";
-  //     document.querySelector("#horas").value = "";
-  //     const contactModal = document.querySelector("#modalContact");
-  //     const instance = M.Modal.getInstance(contactModal);
-  //     instance.close()
-  //     M.toast({
-  //         html: `Contacto añadido con éxito`,
-  //         classes: "rounded blue-grey darken-2",
-  //         displayLength: 50000
-  //     })
-  // })
+// Escritura de los elementos del documento
+document.addEventListener("DOMContentLoaded", (event) => {
+  database.collection("datos").get().then(function (querySnapshot) {
+      querySnapshot.forEach(function (doc) {
+        console.log(doc.id, " => ", doc.data());
+      });
+    });
 });
 
 
-// // Escritura de los elementos del documento
-// document.addEventListener("DOMContentLoaded", (event) => {
-//   database.collection("datos").get().then(function (querySnapshot) {
-//       querySnapshot.forEach(function (doc) {
-//         console.log(doc.id, " => ", doc.data());
-//       });
-//     });
-// });
+// .then((docRef) => {
+//   console.log("añadido con", docRef.id);
+//    document.querySelector("#nombre").value = "";
+//    document.querySelector("#zona-texto").value = "";
+//    document.querySelector("#horas").value = "";
+
+//    const contactModal = document.querySelector("#modalContact");
+//    const instance = M.Modal.getInstance(contactModal);
+//    instance.close()
+//    M.toast({
+//        html: `Contacto añadido con éxito`,
+//        classes: "rounded blue-grey darken-2",
+//        displayLength: 50000
+//    })
+// }).catch((docRef) => {
+//  console.log("Error", error);
+//    document.querySelector("#nombre").value = "";
+//    document.querySelector("#zona-texto").value = "";
+//    document.querySelector("#horas").value = "";
+//    const contactModal = document.querySelector("#modalContact");
+//    const instance = M.Modal.getInstance(contactModal);
+//    instance.close()
+//    M.toast({
+//        html: `Contacto añadido con éxito`,
+//        classes: "rounded blue-grey darken-2",
+//        displayLength: 50000
+//    })
+// })

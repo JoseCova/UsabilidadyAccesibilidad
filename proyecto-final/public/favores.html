@@ -23,8 +23,10 @@
   <!-- Fin CSS materialize-->
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
-  <script src="./js/init.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+  <script src="./js/favores.js" defer></script>
   <!-- Fin scripts firebase-->
 
   <!-- CSS propio-->
@@ -92,9 +94,13 @@
   <h2 class="center" tabindex="0">Formulario para crear favores</h2>
  
   <!--Collection -->
+  <!-- <section  id="userpage">        
+    <div class="collection" id="personas">
+        <a href="#!" class="collection-item text-grey center-align">No hay contactos aún</a>    
+    </div>
+  </section> -->
   <ul class="collection">
-    <li class="collection-item avatar">
-      <img src="images/yuna.jpg" alt="" class="circle" />
+    <li class="collection-item avatar" id="personas">
       <span class="title">Title</span>
       <p>
         First Line <br />
@@ -130,7 +136,7 @@
       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
     </li>
   </ul>
-  <!--Fin collection-->
+  <!-- Fin collection -->
 
   <!-- Fin de Contenido Página Favores-->
 
