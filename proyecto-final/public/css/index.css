@@ -11,8 +11,7 @@ h2,
 h3,
 h4,
 h5,
-h6
- {
+h6 {
   color: #0277bd;
   margin: 0.2em;
 }
@@ -23,7 +22,6 @@ h6
 
 .azul {
   color: #0277bd;
-
 }
 
 .btn {
@@ -39,17 +37,17 @@ h6
   color: #0277bd;
 }
 /* label focus color */
-.input-field input[type=text]:focus + label {
+.input-field input[type="text"]:focus + label {
   color: #0277bd;
 }
 /* label underline focus color */
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid #0277bd;
-  box-shadow: 0 1px 0 0 #0277bd;
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #0277bd !important;
+  box-shadow: 0 1px 0 0 #0277bd !important;
 }
 
 nav .breadcrumb {
-  color:#F8F8F8;
+  color: #f8f8f8;
 }
 
 /* CSS navbar */
@@ -74,10 +72,67 @@ nav .breadcrumb {
   height: 25em;
   border: 2px solid #0277bd;
   border-radius: 1em;
+  margin-right: 0.925em;
+}
+
+.cont-flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.8em;
 }
 
 .padding {
   padding: 0.625em;
+}
+
+/* Media queries página de favores */
+@media screen and (max-width: 1294px) {
+  .imagen1 {
+    width: 26em;
+    height: 24em;
+  }
+}
+
+@media screen and (max-width: 1144px) {
+  .imagen1 {
+    width: 24em;
+    height: 22em;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .imagen1 {
+    width: 22.5em;
+    height: 20.5em;
+  }
+}
+
+@media screen and (max-width: 818px) {
+  .imagen1 {
+    width: 20em;
+    height: 18em;
+  }
+}
+
+@media screen and (max-width: 718px){
+    .imagen1 {
+      width: 18.5em;
+      height: 17.5em;
+    }
+}
+
+@media screen and (max-width: 666px){
+  .imagen1 {
+    width: 17.5em;
+    height: 16em;
+  }
+}
+
+@media screen and (max-width: 626px){
+  .imagen1 {
+    width: 16.5em;
+    height: 15em;
+  }
 }
 /* Fin CSS página favores */
 
@@ -102,7 +157,7 @@ nav .breadcrumb {
 .logbutton {
   background: #0277bd;
   color: white;
-  border: 2px solid  grey;
+  border: 2px solid grey;
   border-radius: 15px;
   cursor: pointer;
   width: 250px;
@@ -167,7 +222,7 @@ nav .breadcrumb {
   }
 }
 
-@media screen and (max-width: 634px){
+@media screen and (max-width: 634px) {
   .images-wrapper img {
     height: 12.5em;
     width: 12.5em;
@@ -177,7 +232,7 @@ nav .breadcrumb {
 
 /* CSS del footer */
 .highlight > a {
-  color:  #0277bd;
+  color: #0277bd;
 }
 
 .highlight > a:hover {
@@ -222,7 +277,6 @@ nav .breadcrumb {
   padding: 0.3125em;
   margin-bottom: 0.625em;
 }
-
 
 .icon-block p {
   text-align: justify;
@@ -275,3 +329,4 @@ nav .breadcrumb {
     height: 9em;
   }
 }
+/* Fin CSS index media queries */
