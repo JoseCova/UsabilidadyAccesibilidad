@@ -199,15 +199,22 @@ nav .breadcrumb {
   margin-top: 1em;
 }
 
-.card-wrapper {
-  width: 50%;
-}
-
 .col-centrada {
   display: flex;
   margin-bottom: 0.5em;
   justify-content: center;
 }
+
+.card {
+  width: 60%;
+}
+
+.card-image > img {
+  width: 30rem;
+  height: 22em;
+}
+
+
 @media screen and (max-width: 950px) {
   .images-wrapper img {
     height: 16em;
@@ -263,6 +270,15 @@ nav .breadcrumb {
 .center {
   display: flex;
   justify-content: center;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-center button {
+  margin-right: 0.5em;
 }
 
 input[type="range"]::-moz-range-track {
