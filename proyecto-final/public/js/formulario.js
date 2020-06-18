@@ -8,11 +8,15 @@ var firebaseConfig = {
   messagingSenderId: "1030376776101",
   appId: "1:1030376776101:web:511c39ddc9c3f3b3a8c84c",
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
+});
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.firestore();
-
-
 const btnSubmit = document.querySelector("#btnSubmit");
 
 btnSubmit.addEventListener("click", () => {
