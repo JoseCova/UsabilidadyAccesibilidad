@@ -82,35 +82,37 @@
     <!-- introducir el correo, indique el favor, indique el tiempo que puede realizar el favor, indique -->
 
     <!-- Formulario -->
-    <div class="container container-form">
+    <div class="container container-form" aria-label="formulario de favores">
       <div class="row">
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6 m6 l6">
-              <input id="nombre" type="text" class="validate" />
-              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text" class="validate" aria-required="true" aria-label="nombre" />
+              <label for="nombre">Nombre (Obligatorio) </label>
             </div>
             <div class="input-field col s6 m6 l6">
-              <input id="apellidos" type="text" class="validate" required/>
-              <label class="marca" for="apellidos">Apellidos</label>
+              <input id="apellidos" type="text" class="validate" aria-required="true" aria-label="apellidos"/>
+              <label class="marca" for="apellidos">Apellidos (Obligatorio)</label>
+
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="correo" type="email" class="validate" required/>
-              <label for="correo">Correo electrónico</label>
+              <input id="correo" type="email" class="validate" aria-required="true" aria-label="correo" aria-describedby="descipcioncorreo"/>
+              <label for="correo">Correo electrónico (Obligatorio) </label> 
+              <small id="descripcioncorreo">El formato del correo debe ser algo@ejemplo.com (se necesita un @)</small>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="zona-texto" type="text" class="validate" required/>
-              <label for="zona-texto">Por favor, indique el favor que desea realizar </label>
+              <input id="zona-texto" type="text" class="validate" aria-required="true" aria-label="favor a realizar"/>
+              <label for="zona-texto">Por favor, indique el favor que desea realizar (Obligatorio) </label>
             </div>
           </div>
           <div class="row">
-            <label for="horas" class="azul"> Indique el número de horas que podrá estar disponible </label>
             <p class="range-field">
-              <input type="range" id="horas" min="1" max="24"/>
+              <label for="horas" class="azul"> Indique el número de horas que podrá estar disponible (Obligatorio) </label>
+              <input type="range" id="horas" min="1" max="24" aria-required="true" aria-label="horas que puede realizar el favor"/>
             </p>
           </div>
           <div class="center">
