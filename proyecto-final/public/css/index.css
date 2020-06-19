@@ -209,10 +209,11 @@ nav .breadcrumb {
   width: 60%;
 }
 
-.card-image > img {
-  width: 30rem;
-  height: 22em;
+.card.horizontal .card-image > img {
+  width: 70em;
+  height: 20em;
 }
+
 
 
 @media screen and (max-width: 950px) {
@@ -261,7 +262,7 @@ nav .breadcrumb {
 .container-form {
   margin-top: 1em;
   margin-bottom: 1.2em;
-  border: 3px solid silver;
+  border: 3px solid #9e9e9e;
   border-radius: 1em;
   padding: 0.625em;
   box-shadow: 0 0 1.5em lightgray;

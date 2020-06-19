@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>¿Quiénes somos? | Banco de tiempo grupo 10</title>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos"
-    />
-    <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
-    <meta name="author" content="Néstor Torres Díaz" />
-    <meta name="author" content="Edgar Figueroa González" />
-    <meta name="author" content="José Javier Caraballo Cova" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-    <!-- Falta añadir un favicon -->
 
-    <!-- CSS materialize-->
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!--Import materialize.css-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-      defer
-    ></script>
-    <!-- Fin CSS materialize-->
+<head>
+  <title>¿Quiénes somos? | Banco de tiempo grupo 10</title>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos" />
+  <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
+  <meta name="author" content="Néstor Torres Díaz" />
+  <meta name="author" content="Edgar Figueroa González" />
+  <meta name="author" content="José Javier Caraballo Cova" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+  <!-- Falta añadir un favicon -->
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
-    <script src="./js/init.js" defer></script>
-    <!-- Fin scripts firebase-->
+  <!-- CSS materialize-->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+  <!-- Fin CSS materialize-->
 
-    <!-- CSS propio-->
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+  <script src="./js/init.js" defer></script>
+  <!-- Fin scripts firebase-->
 
-  <body>
-    <!-- Navbar web-->
+  <!-- CSS propio-->
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <!-- Navbar web-->
   <nav>
     <div class="nav-wrapper">
       <a href="index.html" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
         <img class="logo" src="./assets/images/logo.png" alt="logo" />
       </a>
-      <a href="#!" data-target="mobile-demo" class="sidenav-trigger" aria-label="Menu lateral"><i class="material-icons">menu</i></a>
+      <a href="#!" data-target="mobile-demo" class="sidenav-trigger" aria-label="Menu lateral"><i
+          class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="formulario.html">Formulario </a></li>
         <li><a href="favores.html">Favores</a></li>
@@ -65,120 +59,116 @@
   </ul>
   <!-- Fin Navbar movil -->
 
-    <!-- Breadcrumbs -->
-    <nav aria-label="”breadcrumbs”">
-      <div class="nav-wrapper center">
-        <div class="col s12">
-          <a href="index.html" class="breadcrumb">Inicio</a>
-          <a href="quienSomos.html" class="breadcrumb" aria-current="location">¿Quiénes somos?</a>
+  <!-- Breadcrumbs -->
+  <nav aria-label="”breadcrumbs”">
+    <div class="nav-wrapper center">
+      <div class="col s12">
+        <a href="index.html" class="breadcrumb">Inicio</a>
+        <a href="quienSomos.html" class="breadcrumb" aria-current="location">¿Quiénes somos?</a>
+      </div>
+    </div>
+  </nav>
+  <!--Fin breadcrumbs-->
+
+
+  <!-- Contenido -->
+  <h1 tabindex="0" class="header-wrapper">¿Quiénes somos?</h1>
+
+  <p tabindex="0" class="flow-text texto azul">
+    Somos el grupo 10 de Usabilidad y Accesibilidad, conformado por José Javier Caraballo Cova,
+    Néstor Torres Díaz y Edgar Figueroa González. Nuestro objetivo es ofrecer un entorno donde las
+    personas puedan compartir su tiempo. Usando nuestra aplicación, distintas personas podrán
+    colaborar para hacerse favores pagando con su tiempo. La idea de este proyecto nace a partir del concpeto de
+    "Banco de tiempo" proporcionada por la profesora de la asignatura Isabel Sánchez Berriel.
+  </p>
+
+  <div class="header-wrapper">
+    <h2 tabindex="0">Miembros del grupo</h2>
+  </div>
+
+  <div class="images-wrapper">
+    <div class="row">
+      <div class="col s12 m4 l4 col-centrada">
+        <img src="./assets/images/jose.jpeg" alt="imagen-jose" />
+      </div>
+      <div class="col s12 m4 l4 col-centrada">
+        <img src="./assets/images/nestor.jpg" alt="imagen-nestor" />
+      </div>
+      <div class="col s12 m4 l4 col-centrada">
+        <img src="./assets/images/edgar.jpeg" alt="imagen-edgar" />
+      </div>
+    </div>
+  </div>
+
+  <div class="header-wrapper separation">
+    <h2 tabindex="0">Conócenos un poco</h2>
+  </div>
+
+  <!-- Carta Jose-->
+  <h3 tabindex="0">José Javier Caraballo Cova</h3>
+  <div class="card-wrapper">
+    <div class="col s12 m4">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="./assets/images/jose.jpeg" alt="imagen-jose" />
         </div>
-      </div>
-    </nav>
-    <!--Fin breadcrumbs-->
-
-    <!-- Comprobar que sea responsive -->
-
-    <!-- Contenido -->
-  
-    <h1 tabindex="0" class="header-wrapper">¿Quiénes somos?</h1>
-    
-    <p tabindex="0" class="flow-text texto azul">
-      Somos el grupo 10 de Usabilidad y Accesibilidad, conformado por José Javier Caraballo Cova,
-      Néstor Torres Díaz y Edgar Figueroa González. Nuestro objetivo es ofrecer un entorno donde las
-      personas puedan compartir su tiempo. Usando nuestra aplicación, distintas personas podrán
-      colaborar para hacerse favores pagando con su tiempo. La idea de este proyecto nace a partir del concpeto de
-      "Banco de tiempo" proporcionada por la profesora de la asignatura Isabel Sánchez Berriel.
-    </p>
-
-    <div class="header-wrapper">
-      <h2 tabindex="0">Miembros del grupo</h2>
-    </div>
-
-    <div class="images-wrapper">
-        <div class="row">
-          <div class="col s12 m4 l4 col-centrada">
-            <img src="./assets/images/jose.jpeg" alt="imagen-jose" />
-          </div>
-          <div class="col s12 m4 l4 col-centrada">
-            <img src="./assets/images/nestor.jpg" alt="imagen-nestor"/>
-          </div>
-          <div class="col s12 m4 l4 col-centrada">
-            <img src="./assets/images/edgar.jpeg" alt="imagen-edgar"/>
-          </div>
-      </div>
-    </div>
-
-    <div class="header-wrapper separation">
-      <h2 tabindex="0">Conócenos un poco</h2>
-    </div>
-
-    <!-- Carta Jose-->
-    <!-- Modificar lo de las columnas que eso es copiado de tal -->
-    <h3 tabindex="0">José Javier Caraballo Cova</h3>
-    <div class="card-wrapper">
-      <div class="col s12 m4">
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="./assets/images/jose.jpeg" alt="imagen-jose"/>
-          </div>
-          <div class="card-content">
-            <p class="highlight flow-text">Soy un estudiante de ingeniería informática. Mis gustos son las bochas, Marc Anthony y programar (lo ultimo de vez en cuando). También me gustan los videojuegos.
-              <br>
-              Mi repositorio de github es: <a href="https://github.com/JoseCova/UsabilidadyAccesibilidad"> Este de aquí</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fin carta Jose-->
-
-    <!-- Carta Tote -->
-    <h3 tabindex="0">Néstor Torres Díaz</h3>
-    <div class="card-wrapper">
-      <div class="col s12 m4">
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="./assets/images/nestor.jpg" alt="imagen-nestor"/>
-          </div>
-          <div class="card-content">
-            <p class="highlight flow-text">Aqui algo de cada uno de nosotros.</p>
-          </div>
+        <div class="card-content">
+          <p class="highlight flow-text">Soy un estudiante de ingeniería informática. Mis gustos son las bochas, Marc
+            Anthony y programar (lo ultimo de vez en cuando). También me gustan los videojuegos.
+            <br>
+            Mi repositorio de github es: <a href="https://github.com/JoseCova/UsabilidadyAccesibilidad"> Este de
+              aquí</a></p>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Fin carta Jose-->
 
-    <!-- Fin carta Tote -->
-
-    <!-- Carta Edgar -->
-    <h3 tabindex="0">Edgar Figueroa González</h3>
-    <!-- Modificar lo de las columnas que eso es copiado de tal -->
-    <div class="card-wrapper">
-      <div class="col s12 m4">
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="./assets/images/edgar.jpeg" alt="imagen-edgar"/>
-          </div>
-          <div class="card-content">
-            <p class="highlight flow-text">Mi nombre es Edgar y soy estudiante de Ingeniería Informática en la Universidad de La Laguna. Me gusta el fútbol, tanto verlo como practicarlo. En mi tiempo libre suelo salir con amigos para dar una vuelta y despejarme del agobio constante que me produce la carrera. También suelo jugar a videojuegos.
-            </p>
-          </div>
+  <!-- Carta Tote -->
+  <h3 tabindex="0">Néstor Torres Díaz</h3>
+  <div class="card-wrapper">
+    <div class="col s12 m4">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="./assets/images/nestor.jpg" alt="imagen-nestor" />
+        </div>
+        <div class="card-content">
+          <p class="highlight flow-text">Aqui algo de cada uno de nosotros.</p>
         </div>
       </div>
     </div>
-    <!-- Fin carta Edgar -->
-    <!-- Aquí unas cartas -->
-    <!-- Fin contenido-->
+  </div>
 
-   <!-- Footer -->
+  <!-- Fin carta Tote -->
+
+  <!-- Carta Edgar -->
+  <h3 tabindex="0">Edgar Figueroa González</h3>
+  <div class="card-wrapper">
+    <div class="col s12 m4">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="./assets/images/edgar.jpeg" alt="imagen-edgar" />
+        </div>
+        <div class="card-content">
+          <p class="highlight flow-text">Soy estudiante de Ingeniería Informática en la Universidad
+            de La Laguna. Me gusta el fútbol, tanto verlo como practicarlo. En mi tiempo libre suelo salir con amigos
+            para dar una vuelta y despejarme del agobio constante que me produce la carrera. También suelo jugar a
+            videojuegos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin carta Edgar -->
+  <!-- Fin contenido-->
+
+  <!-- Footer -->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 tabindex="0">Páginas del sitio </h5>
           <ul class="footer-list">
-            <li class="highlight">
-              <a
-                href="https://github.com/JoseCova/UsabilidadyAccesibilidad/tree/master/proyecto-final">Github</a>
-            </li>
             <li class="highlight"><a href="./index.html">Inicio</a></li>
             <li class="highlight"><a href="./formulario.html">Formulario</a></li>
             <li class="highlight"><a href="./favores.html">Favores</a></li>
@@ -201,9 +191,10 @@
       </div>
     </div>
     <div class="footer-copyright">
-     <p class="copy"> Usabilidad y Accesibilidad Grupo 10 </p>
+      <p class="copy"> Usabilidad y Accesibilidad Grupo 10 </p>
     </div>
   </footer>
   <!-- Fin footer -->
-  </body>
+</body>
+
 </html>
