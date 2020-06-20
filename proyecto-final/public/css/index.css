@@ -33,6 +33,10 @@ small { color: green;}
   margin-bottom: 15px;
 }
 
+.flow-text {
+  margin-top: 0.5em;
+}
+
 /* label color */
 .input-field label {
   color: #0277bd;
@@ -46,6 +50,7 @@ small { color: green;}
   border-bottom: 1px solid #0277bd !important;
   box-shadow: 0 1px 0 0 #0277bd !important;
 }
+
 
 nav .breadcrumb {
   color: #f8f8f8;
