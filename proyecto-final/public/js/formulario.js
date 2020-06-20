@@ -26,9 +26,6 @@ btnSubmit.addEventListener("click", () => {
   const txtfavor = document.querySelector("#zona-texto").value;
   const number_hours = document.querySelector("#horas").value;
 
-  // console.log(txtname);
-  // console.log(txtfavor);
-  // console.log(number_hours);
   
   alert("Se ha registrado correctamente");
   database.collection("datos").add({
