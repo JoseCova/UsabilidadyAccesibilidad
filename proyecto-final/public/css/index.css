@@ -61,6 +61,96 @@ nav .breadcrumb {
 }
 /* Fin CSS navbar */
 
+
+/* CSS del footer */
+.highlight > a {
+  color: #0277bd;
+}
+
+.highlight > a:hover {
+  text-decoration: underline;
+}
+
+.page-footer {
+  background: #e3e3e3;
+  color: #0277bd;
+}
+
+.copy {
+  margin: 0.3em;
+  color: #0277bd;
+}
+/* CSS del footer */
+
+/* CSS página index */
+
+.icon-block {
+  background-color: #0277bd;
+  border-radius: 1em;
+  border: 2px solid grey;
+  padding: 0.3125em;
+  margin-bottom: 0.625em;
+}
+
+.icon-block p {
+  text-align: justify;
+}
+
+.div-imagen-central {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-central {
+  border-radius: 1em;
+  border: 2px solid #0277bd;
+  width: 37.5em;
+  height: 25em;
+  margin-bottom: 100px;
+}
+
+.div-imagen-central > img {
+  margin-bottom: 1em;
+}
+
+/* CSS index  media queries */
+
+@media screen and (max-width: 650px) {
+  .div-imagen-central > img {
+    width: 31.25em;
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .div-imagen-central > img {
+    width: 25em;
+    height: 22em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .div-imagen-central > img {
+    width: 18.75em;
+    height: 15.625em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .div-imagen-central > img {
+    width: 16em;
+    height: 13em;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .div-imagen-central > img {
+    width: 12em;
+    height: 9em;
+  }
+}
+/* Fin CSS index media queries */
+
 /* CSS página favores */
 
 .imagen1 {
@@ -206,51 +296,60 @@ nav .breadcrumb {
 }
 
 .card.horizontal .card-image > img {
-  width: 70em;
-  height: 20em;
+  width: 90em;
+  height: 21em;
 }
 
-@media screen and (max-width: 950px) {
-  .images-wrapper img {
-    height: 16em;
-    width: 16em;
+@media screen and (max-width: 1254px) {
+  .card.horizontal .card-image > img {
+    width: 80em;
+    height: 21em;
   }
 }
 
-@media screen and (max-width: 780px) {
-  .images-wrapper img {
-    height: 13em;
-    width: 13em;
+@media screen and (max-width: 1210px) {
+  .card.horizontal .card-image > img {
+    width: 80em;
+    height: 24em;
   }
 }
 
-@media screen and (max-width: 634px) {
-  .images-wrapper img {
-    height: 12.5em;
-    width: 12.5em;
+@media screen and (max-width: 1052px) {
+  .card.horizontal .card-image > img {
+    width: 85em;
+    height: 26em;
+  }
+}
+
+@media screen and (max-width: 1008px) {
+  .card.horizontal .card-image > img {
+    width: 95em;
+    height: 28.5em;
+  }
+}
+
+@media screen and (max-width: 908px) {
+  .card.horizontal .card-image > img {
+    width: 100em;
+    height: 30.2em;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .card.horizontal .card-image > img {
+    width: 100em;
+    height: 31.3em;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .card.horizontal .card-image > img {
+    width: 100em;
+    height: 32.3em;
   }
 }
 /* Fin CSS página de quienes somos */
 
-/* CSS del footer */
-.highlight > a {
-  color: #0277bd;
-}
-
-.highlight > a:hover {
-  text-decoration: underline;
-}
-
-.page-footer {
-  background: #e3e3e3;
-  color: #0277bd;
-}
-
-.copy {
-  margin: 0.3em;
-  color: #0277bd;
-}
-/* CSS del footer */
 
 /* CSS página del formulario */
 .container-form {
@@ -294,72 +393,3 @@ input[type="range"]::-moz-range-track {
   box-shadow: 0 1px 0 0 #0277bd !important;
 }
 /* Fin CSS página del formulario */
-
-/* CSS página index */
-
-.icon-block {
-  background-color: #0277bd;
-  border-radius: 1em;
-  border: 2px solid grey;
-  padding: 0.3125em;
-  margin-bottom: 0.625em;
-}
-
-.icon-block p {
-  text-align: justify;
-}
-
-.div-imagen-central {
-  display: flex;
-  justify-content: center;
-}
-
-.imagen-central {
-  border-radius: 1em;
-  border: 2px solid #0277bd;
-  width: 37.5em;
-  height: 25em;
-  margin-bottom: 100px;
-}
-
-.div-imagen-central > img {
-  margin-bottom: 1em;
-}
-
-/* CSS index  media queries */
-
-@media screen and (max-width: 650px) {
-  .div-imagen-central > img {
-    width: 31.25em;
-    height: 25em;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .div-imagen-central > img {
-    width: 25em;
-    height: 22em;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .div-imagen-central > img {
-    width: 18.75em;
-    height: 15.625em;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .div-imagen-central > img {
-    width: 16em;
-    height: 13em;
-  }
-}
-
-@media screen and (max-width: 250px) {
-  .div-imagen-central > img {
-    width: 12em;
-    height: 9em;
-  }
-}
-/* Fin CSS index media queries */
