@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Formulario | Banco de tiempo grupo 10</title>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos"
-    />
-    <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
-    <meta name="author" content="Néstor Torres Díaz" />
-    <meta name="author" content="Edgar Figueroa González" />
-    <meta name="author" content="José Javier Caraballo Cova" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-    <!-- Falta añadir un favicon -->
 
-    <!-- CSS materialize-->
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!--Import materialize.css-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-      defer
-    ></script>
-    <!-- Fin CSS materialize-->
+<head>
+  <title>Formulario | Banco de tiempo grupo 10</title>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Banco de tiempo para personas encargadas de cuidar ancianos/hijos/familiares enfermos" />
+  <meta name="keywords" content="Banco de tiempo, favores, hijos, familiares, ancianos, cuidar" />
+  <meta name="author" content="Néstor Torres Díaz" />
+  <meta name="author" content="Edgar Figueroa González" />
+  <meta name="author" content="José Javier Caraballo Cova" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+  <!-- Falta añadir un favicon -->
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+  <!-- CSS materialize-->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+  <!-- Fin CSS materialize-->
 
-    <script src="./js/formulario.js" defer></script>
-    <!-- Fin scripts firebase-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
 
-    <!-- CSS propio-->
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
+  <script src="./js/formulario.js" defer></script>
+  <!-- Fin scripts firebase-->
 
-  <body>
-   <!-- Navbar web-->
-   <nav>
+  <!-- CSS propio-->
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <!-- Navbar web-->
+  <nav>
     <div class="nav-wrapper" id="nav">
       <a href="index.html" class="brand-logo" aria-label="Inicio" data-target="mobile-demo">
         <img class="logo" src="./assets/images/logo.png" alt="logo" />
       </a>
-      <a href="#!" data-target="mobile-demo" class="sidenav-trigger" aria-label="Menu lateral"><i class="material-icons">menu</i></a>
+      <a href="#!" data-target="mobile-demo" class="sidenav-trigger" aria-label="Menu lateral"><i
+          class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="formulario.html">Formulario </a></li>
         <li><a href="favores.html">Favores</a></li>
@@ -69,70 +63,66 @@
   </ul>
   <!-- Fin Navbar movil -->
 
-    <!-- Breadcrumbs -->
-    <nav aria-label="”breadcrumbs”">
-      <div class="nav-wrapper center">
-        <div class="col s12">
-          <a href="index.html" class="breadcrumb">Inicio</a>
-          <a href="formulario.html" class="breadcrumb" aria-current="location">Formulario</a>
-        </div>
-      </div>
-    </nav>
-    <!--Fin breadcrumbs-->
-
-    <!-- introducir el correo, indique el favor, indique el tiempo que puede realizar el favor, indique -->
-
-    <!-- Formulario -->
-    <div class="container container-form" aria-label="formulario de favores">
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6 m6 l6">
-              <input id="nombre" type="text" class="validate" aria-required="true" aria-label="nombre" />
-              <label for="nombre">Nombre (Obligatorio) </label>
-            </div>
-            <div class="input-field col s6 m6 l6">
-              <input id="apellidos" type="text" class="validate" aria-required="true" aria-label="apellidos"/>
-              <label class="marca" for="apellidos">Apellidos (Obligatorio)</label>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="correo" type="email" class="validate" aria-required="true" aria-label="correo" aria-describedby="descipcioncorreo"/>
-              <label for="correo">Correo electrónico (Obligatorio) </label> 
-              <small id="descripcioncorreo">El formato del correo debe ser algo@ejemplo.com (se necesita un @)</small>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="zona-texto" type="text" class="validate" aria-required="true" aria-label="favor a realizar"/>
-              <label for="zona-texto">Por favor, indique el favor que desea realizar (Obligatorio) </label>
-            </div>
-          </div>
-          <div class="row">
-            <p class="range-field">
-              <label for="horas" class="azul"> Indique el número de horas que podrá estar disponible (Obligatorio) </label>
-              <input type="range" id="horas" min="1" max="24" aria-required="true" aria-label="horas que puede realizar el favor"/>
-            </p>
-          </div>
-          <div class="center">
-            <button
-              class="btn waves-effect"
-              id="btnSubmit"
-              type="submit"
-              value="click"
-            >
-              Enviar
-              <i class="material-icons right">send</i>
-            </button>
-          </div>
-        </form>
+  <!-- Breadcrumbs -->
+  <nav aria-label="”breadcrumbs”">
+    <div class="nav-wrapper center">
+      <div class="col s12">
+        <a href="index.html" class="breadcrumb">Inicio</a>
+        <a href="formulario.html" class="breadcrumb" aria-current="location">Formulario</a>
       </div>
     </div>
-    <!-- Fin formulario-->
+  </nav>
+  <!--Fin breadcrumbs-->
 
-   <!-- Footer -->
+  <!-- introducir el correo, indique el favor, indique el tiempo que puede realizar el favor, indique -->
+
+  <!-- Formulario -->
+  <div class="container container-form" aria-label="formulario de favores">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6 m6 l6">
+            <input id="nombre" type="text" class="validate" aria-required="true" aria-label="nombre" />
+            <label for="nombre">Nombre (Obligatorio) </label>
+          </div>
+          <div class="input-field col s6 m6 l6">
+            <input id="apellidos" type="text" class="validate" aria-required="true" aria-label="apellidos" />
+            <label class="marca" for="apellidos">Apellidos (Obligatorio)</label>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="correo" type="email" class="validate" aria-required="true" aria-label="correo electrónico" aria-describedby="descipcioncorreo" />
+            <label for="correo">Correo electrónico (Obligatorio) </label>
+            <small id="descripcioncorreo">El formato del correo debe ser algo@ejemplo.com (se necesita un @)</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="zona-texto" type="text" class="validate" aria-required="true" aria-label="favor a realizar" />
+            <label for="zona-texto">Por favor, indique el favor que desea realizar (Obligatorio) </label>
+          </div>
+        </div>
+        <div class="row">
+          <p class="range-field">
+            <label for="horas" class="azul"> Indique el número de horas que podrá estar disponible (Obligatorio)
+            </label>
+            <input type="range" id="horas" min="1" max="24" aria-required="true"
+              aria-label="horas que puede realizar el favor" />
+          </p>
+        </div>
+        <div class="center">
+          <button class="btn waves-effect" id="btnSubmit" type="submit" value="click">
+            Enviar
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Fin formulario-->
+
+  <!-- Footer -->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -148,22 +138,26 @@
         </div>
         <div class="col l6 s12">
           <h5 tabindex="0">Muchas gracias por usar nuestra aplicación</h5>
-          <p>
-            Contacto: <br />
-            <i tabindex="0" class="material-icons">mail</i> Néstor Torres Díaz:
-            <strong>alu0101021768@ull.edu.es</strong> <br />
-            <i tabindex="0" class="material-icons">mail</i> Edgar Figueroa González:
-            <strong>alu0101043838@ull.edu.es</strong> <br />
-            <i tabindex="0" class="material-icons">mail</i> José Javier Caraballo Cova:
-            <strong>alu0101023663@ull.edu.es</strong><br />
-          </p>
+          <div>
+            <span tabindex="0"> Contacto:</span> <br />
+            <i tabindex="0" class="material-icons" aria-label="correo">mail</i>
+            <span tabindex="0"> Néstor Torres Díaz: alu0101021768@ull.edu.es</span>
+            <br />
+            <i tabindex="0" class="material-icons" aria-label="correo">mail</i>
+            <span tabindex="0"> Edgar Figueroa González: alu0101043838@ull.edu.es </span>
+            <br />
+            <i tabindex="0" class="material-icons" aria-label="correo">mail</i>
+            <span tabindex="0"> José Javier Caraballo Cova: alu0101023663@ull.edu.es </span>
+            <br />
+          </div>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-     <p class="copy"> Usabilidad y Accesibilidad Grupo 10 </p>
+      <p class="copy"> Usabilidad y Accesibilidad Grupo 10 </p>
     </div>
   </footer>
   <!-- Fin footer -->
-  </body>
+</body>
+
 </html>
