@@ -16,7 +16,10 @@ h6 {
   margin: 0.2em;
 }
 
-small { color: green;}
+small {
+   color: green;
+}
+
 .gris {
   color: #eeeeee;
 }
@@ -25,36 +28,19 @@ small { color: green;}
   color: #0277bd;
 }
 
+/* Override de clases de materialize */
 .btn {
   background: #0277bd;
 }
 
 .row {
-  margin-bottom: 15px;
+  margin-bottom: 1em;
 }
 
 .flow-text {
   margin-top: 0.5em;
 }
-
-/* label color */
-.input-field label {
-  color: #0277bd;
-}
-/* label focus color */
-.input-field input[type="text"]:focus + label {
-  color: #0277bd !important;
-}
-/* label underline focus color */
-.input-field > input[type="text"]:focus {
-  border-bottom: 1px solid #0277bd !important;
-  box-shadow: 0 1px 0 0 #0277bd !important;
-}
-
-
-nav .breadcrumb {
-  color: #f8f8f8;
-}
+/* Fin override clases materialize
 
 /* CSS navbar */
 .nav-wrapper {
@@ -68,6 +54,10 @@ nav .breadcrumb {
   width: 3em;
   height: 2em;
   margin-left: 1em;
+}
+
+nav .breadcrumb {
+  color: #f8f8f8;
 }
 /* Fin CSS navbar */
 
@@ -164,11 +154,11 @@ nav .breadcrumb {
   background: #0277bd;
   color: white;
   border: 2px solid grey;
-  border-radius: 15px;
+  border-radius: 1em;
   cursor: pointer;
-  width: 250px;
-  height: 50px;
-  font-size: 18px;
+  width: 15.625em;
+  height: 3.125em;
+  font-size: 1.125em;
   margin-bottom: 10px;
 }
 
@@ -219,8 +209,6 @@ nav .breadcrumb {
   width: 70em;
   height: 20em;
 }
-
-
 
 @media screen and (max-width: 950px) {
   .images-wrapper img {
@@ -292,10 +280,22 @@ input[type="range"]::-moz-range-track {
   background-color:#0277bd;
 }
 
-.div-imagen-central {
-  display: flex;
-  justify-content: center;
+/* label color */
+.input-field label {
+  color: #0277bd;
 }
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: #0277bd !important;
+}
+/* label underline focus color */
+.input-field > input[type="text"]:focus {
+  border-bottom: 1px solid #0277bd !important;
+  box-shadow: 0 1px 0 0 #0277bd !important;
+}
+/* Fin CSS página del formulario */
+
+/* CSS página index */
 
 .icon-block {
   background-color: #0277bd;
@@ -308,11 +308,17 @@ input[type="range"]::-moz-range-track {
 .icon-block p {
   text-align: justify;
 }
+
+.div-imagen-central {
+  display: flex;
+  justify-content: center;
+}
+
 .imagen-central {
   border-radius: 1em;
   border: 2px solid #0277bd;
-  width: 600px;
-  height: 400px;
+  width: 37.5em;
+  height: 25em;
   margin-bottom: 100px;
 }
 
