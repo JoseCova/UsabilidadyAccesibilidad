@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     
     database.collection("datos").get().then((snapshot) => {
         snapshot.forEach( (doc) => {
-            list.innerHTML += `<a href="#!" class="collection-item blue-text"> <i class="material-icons circle blue">folder</i> 
+            list.innerHTML += `<a href="#!" aria-live="polite" class="collection-item blue-text"> <i class="material-icons circle blue">folder</i> 
             Nombre: ` + doc.data().name + " <br> Favor que desea realizar: "+ doc.data().favor + " <br> Horas disponible: " + doc.data().hours + `</a>`; 
         });
     })
