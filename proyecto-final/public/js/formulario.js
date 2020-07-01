@@ -26,18 +26,21 @@ btnSubmit.addEventListener("click", () => {
   const txtfavor = document.querySelector("#zona-texto").value;
   const number_hours = document.querySelector("#horas").value;
 
-  
-  alert("Se ha registrado correctamente");
+  if((txtname == "") || (txtapellido == "") || (txtcorreo == "") || (txtfavor == "") || (number_hours == "")){
+    alert("No puede haber campos vacíos");
+  }
+  else{  
+    alert("Se ha registrado correctamente");
+  }
   database.collection("datos").add({
     name: txtname,
     apellido: txtapellido,
     favor: txtfavor,
     hours: number_hours
   }).then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
   }).catch(function(error) {
     console.error("Error adding document: ", error);
-  }); 
+  });
 });
 
 // Escritura de los elementos del documento
